@@ -7,13 +7,10 @@ package model;
 
 /**
  *
- * @author yannis.hofmann
+ * @author Joshua, Lukas, Simon
  */
-public class Algorithmus {
+public class Sudoku {
     
-    public String sudokuLösen(){
-        
-        return null;
-    }
+    
     
 }
