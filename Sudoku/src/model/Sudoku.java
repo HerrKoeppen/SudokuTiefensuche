@@ -83,15 +83,4 @@ public class Sudoku {
     public short getSize(){
         return size;
     }
-    public void setSize(short sze){
-        werteNetz = new Zelle[sze][sze];
-        for(int x=0;x<sze;x++){
-            for(int y=0;y<sze;y++){
-                werteNetz[x][y] = new Zelle(this);
-            }
-        }
-        geloest = false;
-        loesbar = false;
-        size = sze;
-    }
 }
