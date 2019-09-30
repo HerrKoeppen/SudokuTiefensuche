@@ -10,9 +10,9 @@ package model;
  * @author Joshua, Lukas, Simon 
  */
 public class Zelle {
-    short wert;
-    boolean statisch;
-    Sudoku sdk;
+    private short wert;
+    private boolean statisch;
+    private Sudoku sdk;
     
     public Zelle(Sudoku s){
         wert = 0;
@@ -24,6 +24,20 @@ public class Zelle {
         statisch = true;
         if(val == 0) statisch = false;
         sdk = s;
+    }
+    
+    
+
+    public short getWert() {
+        return wert;
+    }
+    public void setWert(short wert) {
+        this.wert = wert;
+        statisch = true;
+        if(wert == 0) statisch = false;
+    }
+    public boolean isStatisch() {
+        return statisch;
     }
     
     
