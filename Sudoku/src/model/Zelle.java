@@ -46,7 +46,7 @@ public class Zelle {
             short cy = (short) Math.ceil((y+1) / Math.sqrt(size));
             for(short ix = (short)(((cx-1)*Math.sqrt(size))+1); ix <= cx*Math.sqrt(size);ix++){
                 for(short iy = (short)(((cx-1)*Math.sqrt(size))+1); iy <= cx*Math.sqrt(size);iy++){
-                    if(sdk.werteNetz[ix][iy].wert == i) einsetzbar = false;
+                    if(sdk.werteNetz[ix-1][iy-1].wert == i) einsetzbar = false;
                 }
             }
         }
