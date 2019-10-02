@@ -43,22 +43,25 @@ public class Sudoku {
         size = sze;
     }
     
-    public void sudokuLoesen(){
-        if(geloest) return;
+    public void sudokuLoesen(boolean tracePath){
+        if(geloest||size < 1) return;//Abbruch bei nicht initialisiertem oder bereits gelöstem Sudoku
         short ix = 0, iy = 0; //index der momentanen Zelle
         boolean done = false;
-        boolean goNext = true;
+        boolean goNext = true;//Bewegrichtung der Rekursionstiefe (in die nächste Ebene / in die vorherige raus)
+                              //Benötigt, um vorgegebene Zellen überspringen zu können
+        
         while(!done){
-            if(!werteNetz[ix][iy].isStatisch()){ //überspringe vorgegebene Zellen
-                if(werteNetz[ix][iy].naechsteEinsetzen()) goNext = true; //Einsetzen der nächstgrößten, einsetzbaren Zahl
-                else goNext = false                                     //und setzen der Bewegrichtung
-            }
             
+            if(!werteNetz[ix][iy].isStatisch()){ //überspringe vorgegebene Zellen
+                if(werteNetz[ix][iy].naechsteEinsetzen(ix, iy, size)) goNext = true; //Einsetzen der nächstgrößten, einsetzbaren Zahl
+                else goNext = false;                                                 //und setzen der Bewegrichtung
+            }
             if(goNext){ //gehe zur nächsten Zelle
-                if(ix < size) x++;
+                if(ix < size-1) ix++;
                 else {
                     ix = 0;
-                    if(iy < size) y++;
+                    if(tracePath) view.Ausgabe.sudokuAusgeben(this);
+                    if(iy < size-1) iy++;
                     else { //sudoku wurde gelöst
                         done = true;
                         loesbar = true;
@@ -66,10 +69,10 @@ public class Sudoku {
                 }
             }
             else { //gehe zur vorherigen Zelle
-                if(ix > 0) x--;
+                if(ix > 0) ix--;
                 else {
-                    ix = size-1;
-                    if(iy > 0) y++;
+                    ix = (short)(size-1);
+                    if(iy > 0) iy--;
                     else { //sudoku ist nicht lösbar
                         done = true;
                         loesbar = false;
@@ -91,7 +94,7 @@ public class Sudoku {
         for(short x=0;x<size;x++){
             for(short y=0;y<size;y++){
                 valNet[x][y] = werteNetz[x][y].getWert();
-                if(werteNetz[x][y].isStatisch() && geloest) valNet[x][y] += 10;
+                if(werteNetz[x][y].isStatisch()) valNet[x][y] += size+1;
             }
         }
         return valNet;

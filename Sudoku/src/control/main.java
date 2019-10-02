@@ -19,33 +19,40 @@ import java.util.logging.Logger;
  * @author yannis.hofmann
  */
 public class main {
-
     
-        private static model.Sudoku sdk;
-    
-    
-        public static void main(String[] args) throws Exception {
+        public static void main(String[] args) {
+            
+            //Beispiel Sudoku in "sample.txt"
             short[][] sudokuleicht = new short[9][9];
             sudokuleicht = convert("sample.txt",(short)9);
-            sdk = new model.Sudoku(sudokuleicht,(short)9);
+            model.Sudoku sdk = new model.Sudoku(sudokuleicht,(short)9);
             view.Ausgabe.sudokuAusgeben(sdk);
-            sdk.sudokuLoesen();
+            sdk.sudokuLoesen(false);
             view.Ausgabe.sudokuAusgeben(sdk);
             
+            //leeres Sudoku
+            short size = 16; //Größe des Leeren Sudokus - Größe schneller leeren Sudokus: 1 , 2 , 4 , 9 , 16 , 64 , (256) -> Quadrate der 2er Potenzen (bis auf 9)
+            short[][] sdk2_ = new short[size][size]; //Notiz: Die Matrix muss (n^2) * (n^2) groß sein -> sqrt (size) = Natürliche Zahl
+            model.Sudoku sdk2 = new model.Sudoku(sdk2_,(short)size);
+            sdk2.sudokuLoesen(false);
+            view.Ausgabe.sudokuAusgeben(sdk2);
     }
 
-            
-        
-        public static short[][] convert(String file, short size) throws FileNotFoundException{
+        public static short[][] convert(String file, short size) {
         String filePath = new File("").getAbsolutePath();
         filePath = filePath.concat("/src/control/" + file);
-        Scanner sc;            
-        sc = new Scanner(new BufferedReader(new FileReader(filePath)));      
+        Scanner sc = null;            
+        try{
+            sc = new Scanner(new BufferedReader(new FileReader(filePath)));
+        }
+        catch(Exception e){
+            return new short[0][0];
+        }
         short[][] myArray = new short[size][size];
-        while (sc.hasNextLine()) {
+        for(short c = 0; c < size;c++){
             String[] items = sc.nextLine().trim().split(",");
-            for (short j = 0; j < items.length; j++) {
-                myArray[j / size][j % size] = (short)Integer.parseInt(items[j]);
+            for (short j = 0; j < size; j++) {
+                myArray[c][j] = (short)Integer.parseInt(items[j]);
             }
         }
         return myArray;

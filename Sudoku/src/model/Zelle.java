@@ -33,28 +33,35 @@ public class Zelle {
         }
         short i = wert;
         boolean einsetzbar = false;
-        while((i < size) && !einsetzbar){
+        
+        while((i < size) && !einsetzbar){//gehe alle Zahlen, die größer sind als der momentane Wert, durch:
             i++;
-            einsetzbar = true;
-            for(short iy = 0; iy < 10;iy++){
+            einsetzbar = true;//wenn die Zahl laut den den Überprüfungen einsetzbar ist, bricht die Schleife ab,
+                              //ansonsten geht sie alle weiteren Zahlen durch, die kleiner sind als der Maximalwert.
+                              
+            for(short iy = 0; iy < size;iy++){//überprüfen der Spalte
                 if(sdk.werteNetz[x][iy].wert == i) einsetzbar = false;
             }
-            for(short ix = 0; ix < 10;ix++){
+            
+            for(short ix = 0; ix < size;ix++){//überprüfen der Zeile
                 if(sdk.werteNetz[ix][y].wert == i) einsetzbar = false;
             }
+            
             short cx = (short) Math.ceil((x+1) / Math.sqrt(size));
-            short cy = (short) Math.ceil((y+1) / Math.sqrt(size));
-            for(short ix = (short)(((cx-1)*Math.sqrt(size))+1); ix <= cx*Math.sqrt(size);ix++){
-                for(short iy = (short)(((cx-1)*Math.sqrt(size))+1); iy <= cx*Math.sqrt(size);iy++){
+            short cy = (short) Math.ceil((y+1) / Math.sqrt(size));//bestimmung des Quadranten
+            
+            for(short ix = (short)(((cx-1)*Math.sqrt(size))+1); ix <= cx*Math.sqrt(size);ix++){//überprüfen des Quadranten
+                for(short iy = (short)(((cy-1)*Math.sqrt(size))+1); iy <= cy*Math.sqrt(size);iy++){
                     if(sdk.werteNetz[ix-1][iy-1].wert == i) einsetzbar = false;
                 }
             }
         }
-        if(einsetzbar){
+        
+        if(einsetzbar){//es wurde eine Zahl gefunden.
             wert = i;
             return true;
         }
-        wert = 0;
+        wert = 0;//es wurde keine Zahl gefunden.
         return false;
     }
 
