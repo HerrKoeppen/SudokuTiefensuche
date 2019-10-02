@@ -27,7 +27,7 @@ public class Ausgabe{
                 System.out.println(str);  //Ausgabe des ungelösten Sudoku. 
             }
         }
-        else if(sdk.loesbar()){    //Lösungsalgorithmus endet bei "Schritt 3".
+        else if(sdk.loesbar()){    //Lösungsalgorithmus endete bei "Schritt 3".
             System.out.println("Das Sudoku wurde erfolgreich gelöst. Das Fertige Sudoku:");
             
             short[][] werteNetz = sdk.getWerteNetz();
@@ -36,7 +36,8 @@ public class Ausgabe{
             for(short x=0;x<size;x++){
                 String str = "";
                 for(short y=0;y<size;y++){
-                    str += "["+werteNetz[x][y]+"]";
+                    if(werteNetz[x][y] < 10) str += "\033[31m["+werteNetz[x][y]+"]\033[0m";
+                    else str += "["+(werteNetz[x][y]-10)+"]";
                 }
                 System.out.println(str); //Ausgabe des gelösten Sudokus.
             }
