@@ -44,10 +44,40 @@ public class Sudoku {
     }
     
     public void sudokuLoesen(){
-        
-        short ix = 0, iy = 0; //index of current cell
-        
-        
+        if(geloest) return;
+        short ix = 0, iy = 0; //index der momentanen Zelle
+        boolean done = false;
+        boolean goNext = true;
+        while(!done){
+            if(!werteNetz[ix][iy].isStatisch()){ //überspringe vorgegebene Zellen
+                if(werteNetz[ix][iy].naechsteEinsetzen()) goNext = true; //Einsetzen der nächstgrößten, einsetzbaren Zahl
+                else goNext = false                                     //und setzen der Bewegrichtung
+            }
+            
+            if(goNext){ //gehe zur nächsten Zelle
+                if(ix < size) x++;
+                else {
+                    ix = 0;
+                    if(iy < size) y++;
+                    else { //sudoku wurde gelöst
+                        done = true;
+                        loesbar = true;
+                    }
+                }
+            }
+            else { //gehe zur vorherigen Zelle
+                if(ix > 0) x--;
+                else {
+                    ix = size-1;
+                    if(iy > 0) y++;
+                    else { //sudoku ist nicht lösbar
+                        done = true;
+                        loesbar = false;
+                    }
+                }
+            }
+        }
+        geloest = true;
     }
     
     public boolean geloest(){
