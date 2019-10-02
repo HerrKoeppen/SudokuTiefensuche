@@ -16,7 +16,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 /**
  *
- * @author yannis.hofmann
+ * @author yannis.hofmann , Joshua
  */
 public class main {
     
@@ -26,16 +26,23 @@ public class main {
             short[][] sudokuleicht = new short[9][9];
             sudokuleicht = convert("sample.txt",(short)9);
             model.Sudoku sdk = new model.Sudoku(sudokuleicht,(short)9);
-            view.Ausgabe.sudokuAusgeben(sdk);
-            sdk.sudokuLoesen(false);
+            view.Ausgabe.sudokuAnzeigen(sdk);
+            sdk.sudokuLoesen(false, true, false);
             view.Ausgabe.sudokuAusgeben(sdk);
             
             //leeres Sudoku
-            short size = 16; //Größe des Leeren Sudokus - Größe schneller leeren Sudokus: 1 , 2 , 4 , 9 , 16 , 64 , (256) -> Quadrate der 2er Potenzen (bis auf 9)
+            short size = 4; //Größe des Leeren Sudokus - Größe schneller leeren Sudokus: 1 , 2 , 4 , 9 , 16 , 64 , (256) -> Quadrate der 2er Potenzen (bis auf 9)
             short[][] sdk2_ = new short[size][size]; //Notiz: Die Matrix muss (n^2) * (n^2) groß sein -> sqrt (size) = Natürliche Zahl
+            sdk2_[1][0] = 2;
+            sdk2_[0][1] = 1;
+            sdk2_[2][1] = 4;
+            sdk2_[3][2] = 4;
+            sdk2_[0][3] = 3;
             model.Sudoku sdk2 = new model.Sudoku(sdk2_,(short)size);
-            sdk2.sudokuLoesen(false);
-            view.Ausgabe.sudokuAusgeben(sdk2);
+            sdk2.sudokuLoesen(false, true, true);//Stand d. Algorithmus  |  Statistiken für Nerds  |  Rekursionsraph
+            view.Ausgabe.sudokuAusgeben(sdk2);   // 1 Zeile mit Rotem Balken im Rekursionsgraph = 1 Blatt ("Niete")
+                                                 // 1 Zeile im Rekursionsgraph(abgesehen von der ersten) = 1 Knoten
+                                                 // (Anzahl rekursive Aufrufe) - (Anzahl der Knoten) = Zahl der übersprungenen, vorgegebenen Felder
     }
 
         public static short[][] convert(String file, short size) {
