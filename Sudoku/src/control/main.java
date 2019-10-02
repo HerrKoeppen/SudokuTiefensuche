@@ -23,14 +23,14 @@ public class main {
     
         private static model.Sudoku sdk;
     
-        
-    
     
         public static void main(String[] args) throws Exception {
             short[][] sudokuleicht = new short[9][9];
             sudokuleicht = convert("sample.txt",(short)9);
             sdk = new model.Sudoku(sudokuleicht,(short)9);
+            //sdk.sudokuLoesen();
             view.Ausgabe.sudokuAusgeben(sdk);
+            
     }
 
             

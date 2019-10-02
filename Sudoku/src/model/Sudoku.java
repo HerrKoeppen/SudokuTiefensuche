@@ -43,7 +43,12 @@ public class Sudoku {
         size = sze;
     }
     
-    
+    public void sudokuLoesen(){
+        
+        short ix = 0, iy = 0; //index of current cell
+        
+        
+    }
     
     public boolean geloest(){
         return geloest;
@@ -56,6 +61,7 @@ public class Sudoku {
         for(short x=0;x<size;x++){
             for(short y=0;y<size;y++){
                 valNet[x][y] = werteNetz[x][y].getWert();
+                if(werteNetz[x][y].isStatisch() && geloest) valNet[x][y] += 10;
             }
         }
         return valNet;
