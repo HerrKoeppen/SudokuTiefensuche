@@ -11,7 +11,7 @@ import model.Sudoku;
  */
 public class Ausgabe{
     
-    public void sudokuAusgeben(Sudoku sdk){
+    public static void sudokuAusgeben(Sudoku sdk){
         if(!sdk.geloest()){  //Überprüfung ob das Sudoku gelöst ist.
             System.out.println("Das Sudoku wurde noch nicht gelöst.");
             
