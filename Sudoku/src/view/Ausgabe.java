@@ -7,7 +7,7 @@ package view;
 import model.Sudoku;
 /**
  *
- * @author yannis.hofmann
+ * @author Philipp , Joshua
  */
 public class Ausgabe{
     
@@ -75,4 +75,82 @@ public class Ausgabe{
             System.out.println("Das Sudoku ist nicht lösbar\n");
         }
     }
+    
+    public static void sudokuAnzeigen(Sudoku sdk,short ix, short iy){
+        short[][] werteNetz = sdk.getWerteNetz();
+        short size = sdk.getSize();
+
+        for(short x=0;x<size;x++){
+            String str = "";
+            for(short y=0;y<size;y++){
+                if(x==ix&&y==iy){
+                    if(werteNetz[x][y] == 0) {
+                        str += "\033[32m[";
+                        for(int l = 0; l <= Math.floor(Math.log10(size));l++) str += "-";
+                        str += "]\033[0m";
+                    }
+                    else{   
+                        str += "\033[32m[";
+                        for(int l = 0; l < Math.floor(Math.log10(size));l++)
+                            if(Math.floor(Math.log10(werteNetz[x][y])) <= l) str += "0";
+                        str += werteNetz[x][y]+"]\033[0m";
+                    }
+                }
+                else if(werteNetz[x][y] < size+1) {
+                    if(werteNetz[x][y] == 0) {
+                        str += "[";
+                        for(int l = 0; l <= Math.floor(Math.log10(size));l++) str += " ";
+                        str += "]";
+                    }
+                    else{   
+                        str += "\033[31m[";
+                        for(int l = 0; l < Math.floor(Math.log10(size));l++)
+                            if(Math.floor(Math.log10(werteNetz[x][y])) <= l) str += "0";
+                        str += werteNetz[x][y]+"]\033[0m";
+                    }
+                }
+                else {
+                    str += "[";
+                    for(int l = 0; l < Math.floor(Math.log10(size));l++)
+                        if(Math.floor(Math.log10(werteNetz[x][y])) <= l) str += "0";
+                    str += (werteNetz[x][y]-(size+1))+"]";
+                }
+            }
+            System.out.println(str); //Ausgabe des gelösten Sudokus.
+        }
+        System.out.println();
+    }
+    
+    public static void sudokuAnzeigen(Sudoku sdk){
+        short[][] werteNetz = sdk.getWerteNetz();
+        short size = sdk.getSize();
+
+        for(short x=0;x<size;x++){
+            String str = "";
+            for(short y=0;y<size;y++){
+                if(werteNetz[x][y] < size+1) {
+                    if(werteNetz[x][y] == 0) {
+                        str += "[";
+                        for(int l = 0; l <= Math.floor(Math.log10(size));l++) str += " ";
+                        str += "]";
+                    }
+                    else{   
+                        str += "\033[31m[";
+                        for(int l = 0; l < Math.floor(Math.log10(size));l++)
+                            if(Math.floor(Math.log10(werteNetz[x][y])) <= l) str += "0";
+                        str += werteNetz[x][y]+"]\033[0m";
+                    }
+                }
+                else {
+                    str += "[";
+                    for(int l = 0; l < Math.floor(Math.log10(size));l++)
+                        if(Math.floor(Math.log10(werteNetz[x][y])) <= l) str += "0";
+                    str += (werteNetz[x][y]-(size+1))+"]";
+                }
+            }
+            System.out.println(str); //Ausgabe des gelösten Sudokus.
+        }
+        System.out.println();
+    }
+    
 }

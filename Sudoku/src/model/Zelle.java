@@ -36,6 +36,7 @@ public class Zelle {
         
         while((i < size) && !einsetzbar){//gehe alle Zahlen, die größer sind als der momentane Wert, durch:
             i++;
+            sdk.anzTests++;
             einsetzbar = true;//wenn die Zahl laut den den Überprüfungen einsetzbar ist, bricht die Schleife ab,
                               //ansonsten geht sie alle weiteren Zahlen durch, die kleiner sind als der Maximalwert.
                               
@@ -76,6 +77,4 @@ public class Zelle {
     public boolean isStatisch() {
         return statisch;
     }
-    
-    
 }
