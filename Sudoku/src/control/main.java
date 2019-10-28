@@ -20,32 +20,15 @@ import java.util.logging.Logger;
  */
 public class main {
     
+        static private short size = 1;
+        static private short[][] sdk = new short[1][1];
+        static private model.Sudoku sudoku = new model.Sudoku(sdk, (short)1);
+    
         public static void main(String[] args) {
             
-            //Beispiel Sudoku in "sample.txt"
-            short[][] sudokuleicht = new short[9][9];
-            sudokuleicht = convert("sample.txt",(short)9);
-            model.Sudoku sdk = new model.Sudoku(sudokuleicht,(short)9);
-            view.Ausgabe.sudokuAnzeigen(sdk);
-            sdk.sudokuLoesen(false, true, false);
-            view.Ausgabe.sudokuAusgeben(sdk);
-            
-            //leeres Sudoku
-            short size = 4; //Größe des Leeren Sudokus - Größe schneller leeren Sudokus: 1 , 2 , 4 , 9 , 16 , 64 , (256) -> Quadrate der 2er Potenzen (bis auf 9)
-            short[][] sdk2_ = new short[size][size]; //Notiz: Die Matrix muss (n^2) * (n^2) groß sein -> sqrt (size) = Natürliche Zahl
-            sdk2_[1][0] = 2;
-            sdk2_[0][1] = 1;
-            sdk2_[2][1] = 4;
-            sdk2_[3][2] = 4;
-            sdk2_[0][3] = 3;
-            model.Sudoku sdk2 = new model.Sudoku(sdk2_,(short)size);
-            sdk2.sudokuLoesen(false, true, true);//Stand d. Algorithmus  |  Statistiken für Nerds  |  Rekursionsraph
-            view.Ausgabe.sudokuAusgeben(sdk2);   // 1 Zeile mit Rotem Balken im Rekursionsgraph = 1 Blatt ("Niete")
-                                                 // 1 Zeile im Rekursionsgraph(abgesehen von der ersten) = 1 Knoten
-                                                 // (Anzahl rekursive Aufrufe) - (Anzahl der Knoten) = Zahl der übersprungenen, vorgegebenen Felder
     }
 
-        public static short[][] convert(String file, short size) {
+        private static short[][] convert(String file, short size) {
         String filePath = new File("").getAbsolutePath();
         filePath = filePath.concat("/src/control/" + file);
         Scanner sc = null;            
@@ -67,4 +50,33 @@ public class main {
 
 }
         
+        
+        
+        public static void sudokuInitialisieren(short sze){
+            size = sze;
+            sdk = new short[sze][sze];
+        }
+        
+        public static void zelleVeraendern(short x, short y, short value){
+            if((x >= size) ||(y >= size)) return;
+            sdk[x][y] = value;
+        }
+        
+        public static void sudokuErstellen(){
+            sudoku = new model.Sudoku(sdk, size);
+        }
+        
+        
+        
+        public static void importieren(String file, short sze){
+            size = sze;
+            sdk = convert(file, sze);
+            sudoku = new model.Sudoku(sdk, sze);
+        }
+        
+        
+        
+        public static void sudokuLoesen(){
+            sudoku.sudokuLoesen();
+        }
 }
