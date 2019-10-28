@@ -27,19 +27,51 @@ public class SizeChoosement extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        ButtonSize4 = new javax.swing.JButton();
+        ButtonSize8 = new javax.swing.JButton();
+        ButtonSize16 = new javax.swing.JButton();
+
+        setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        setFont(new java.awt.Font("Stencil", 0, 24)); // NOI18N
+
+        ButtonSize4.setFont(new java.awt.Font("Stencil", 0, 24)); // NOI18N
+        ButtonSize4.setText("4x4");
+
+        ButtonSize8.setFont(new java.awt.Font("Stencil", 0, 24)); // NOI18N
+        ButtonSize8.setText("9x9");
+
+        ButtonSize16.setFont(new java.awt.Font("Stencil", 0, 24)); // NOI18N
+        ButtonSize16.setText("16x16");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(ButtonSize4, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(25, 25, 25)
+                .addComponent(ButtonSize8, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(25, 25, 25)
+                .addComponent(ButtonSize16, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(20, 20, 20))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(131, 131, 131)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(ButtonSize4, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ButtonSize8, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ButtonSize16, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(131, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton ButtonSize16;
+    private javax.swing.JButton ButtonSize4;
+    private javax.swing.JButton ButtonSize8;
     // End of variables declaration//GEN-END:variables
 }
