@@ -14,6 +14,13 @@ import java.util.Collections;
  */
 public class Sudoku {
     
+    private int anzBlaetter = 1;//statistische Variablen
+    private int anzKnoten = 0;
+    private int anzRekAuf = 0;
+    
+    private String graph = "";
+    
+    
     protected Zelle[][] werteNetz;
     protected boolean geloest, loesbar;
     private short size;
@@ -46,25 +53,19 @@ public class Sudoku {
         size = sze;
     }
     
-    public void sudokuLoesen(boolean tracePath, boolean stats, boolean showGraph){
+    public void sudokuLoesen(){
         if(geloest||size < 1) return;//Abbruch bei nicht initialisiertem oder bereits gelöstem Sudoku
+        
+        graph+="| #";
+        for(int c = 0; c < size*size+size-2;c++) graph+= " ";
+        graph+="||\n";
+        
         short ix = 0, iy = 0; //index der momentanen Zelle
         boolean done = false;
         boolean goNext = true;//Bewegrichtung der Rekursionstiefe (in die nächste Ebene / in die vorherige raus)
                               //Benötigt, um vorgegebene Zellen überspringen zu können
-                              
-        int anzBlaetter = 1;//statistische Variablen
-        int anzKnoten = 0;
-        int anzRekAuf = 0;
-        ArrayList blaetter = new ArrayList<Integer>();
+        //ArrayList blaetter = new ArrayList<Integer>();
         
-        String graph = "";
-        if(showGraph&&size<10){
-            graph+=("| #");
-            for(int c = 0; c < size*size+size-2;c++) graph+=(" ");
-            graph+=("||\n");
-        }
-        else if(showGraph) graph = "\033[31m    //FEHLER: Rekursionsgraph kann nicht gezeichnet werden, da \033[34m[size]\033[31m > 10 ist.\033[0m\n";
                 
         while(!done){
             anzRekAuf++;
@@ -72,20 +73,18 @@ public class Sudoku {
                 
                 if(werteNetz[ix][iy].naechsteEinsetzen(ix, iy, size)) {
                     goNext = true;
-                    if(tracePath&&stats) System.out.println("Betrete neue Rekursionsebene - (X:"+(iy+1)+" , Y:"+(ix+1)+")");
-                    if(tracePath) view.Ausgabe.sudokuAnzeigen(this,ix, iy);
+                    //ausgabe von ix iy
                 }       //Einsetzen der nächstgrößten, einsetzbaren Zahl
                 else {  //und setzen der Bewegrichtung
                     goNext = false;
-                    blaetter.add((ix * size) + iy +1);
+                    //blaetter.add((ix * size) + iy +1);
                     anzBlaetter++;
-                    if(tracePath&&stats) System.out.println("Verlasse Rekursionsebene bei (X:"+(iy+1)+" , Y:"+(ix+1)+") - Tiefe: "+((ix * size) + iy +1));
-                    if(tracePath&&stats) view.Ausgabe.sudokuAnzeigen(this,ix, iy);
+                    //augabe bei ix iy löschen
                 }
                 anzKnoten++;
                 
-                if(showGraph&&size<10){
-                    graph+=("|");
+                if(size <= 9){
+                    graph += "|";
                     int cs = 0;
                     for(int c = 0;  c < ((ix * size) + iy +1);c++) {
                         int w = werteNetz[(int)Math.ceil(c/size)][c - size * (int)Math.ceil(c/size)].getWert();
@@ -95,10 +94,10 @@ public class Sudoku {
                         else graph += "\033[31m=";
                     };
                     graph += "#";
-                    for(int c = 0; c < (size*size)-((ix * size) + iy +2);c++) graph+=(" ");
+                    for(int c = 0; c < (size*size)-((ix * size) + iy +2);c++) graph += " ";
                     for(int c = 0; c < size - cs; c++) graph += " ";
-                    if((size*size) > ((ix * size) + iy +1)) graph+=("|");
-                    graph+="|\033[0m\n";
+                    if((size*size) > ((ix * size) + iy +1)) graph += "|";
+                    graph += "|\033[0m\n";
                 }
             }
             
@@ -110,7 +109,7 @@ public class Sudoku {
                     else { //sudoku wurde gelöst
                         done = true;
                         loesbar = true;
-                        blaetter.add(size*size);
+                        //blaetter.add(size*size);
                     }
                 }
             }
@@ -122,23 +121,12 @@ public class Sudoku {
                     else { //sudoku ist nicht lösbar
                         done = true;
                         loesbar = false;
+                        }
                     }
                 }
             }
+            geloest = true;
         }
-        geloest = true;
-        if(showGraph) System.out.println(graph);
-        if(stats){
-            System.out.print("Lösungsalgorithmus - Ergebnis:");
-            if(loesbar) System.out.println(" Das Sudoku ist lösbar!\n");
-            else  System.out.println(" Das Sudoku ist nicht lösbar!\n");
-            System.out.println("Gesammtzahl der Knoten/Teilbäume: "+ anzKnoten);
-            System.out.println("Gesammtzahl der Blätter/Endknoten: "+ anzBlaetter);
-            System.out.println("Gesammtzahl rekursiver Aufrufe: " + anzRekAuf);
-            blaetter.sort(Collections.reverseOrder());
-            System.out.println("Absteigend geordnete Liste der Tiefen aller Blätter:\n  "+blaetter.toString()+"\n\n");
-        }
-    }
     
     public boolean geloest(){
         return geloest;
