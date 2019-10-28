@@ -5,15 +5,13 @@
  */
 package control;
 
-import java.io.IOException;
+import java.awt.Color;
 import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
-import java.util.Arrays;
 import java.util.Scanner;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import javax.swing.JDialog;
+import javax.swing.JPanel;
 /**
  *
  * @author yannis.hofmann , Joshua
@@ -25,6 +23,16 @@ public class main {
         static private model.Sudoku sudoku = new model.Sudoku(sdk, (short)1);
     
         public static void main(String[] args) {
+         
+        JDialog meinJDialog = new JDialog();
+        meinJDialog.setTitle("JPanel Beispiel");
+        meinJDialog.setSize(450,300);
+ 
+        JPanel panel = new view.SizeChoosement();
+       
+        meinJDialog.add(panel);
+        
+        meinJDialog.setVisible(true);
             
     }
 
