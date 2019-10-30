@@ -291,6 +291,9 @@ public class SudokuImportment12x12 extends javax.swing.JPanel {
         jTextPane261 = new javax.swing.JTextPane();
 
         LösenImp.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/Lösen Knopf text klein.png"))); // NOI18N
+        LösenImp.setBorder(null);
+        LösenImp.setBorderPainted(false);
+        LösenImp.setContentAreaFilled(false);
         LösenImp.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 LösenImpActionPerformed(evt);
