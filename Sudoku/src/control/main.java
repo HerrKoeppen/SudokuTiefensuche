@@ -11,30 +11,33 @@ import java.io.File;
 import java.io.FileReader;
 import java.util.Scanner;
 import javax.swing.JDialog;
+import javax.swing.JFrame;
 import javax.swing.JPanel;
+import view.*;
 /**
  *
  * @author yannis.hofmann , Joshua
  */
 public class main {
-    
+        //GameState state = GameState.SIZEC;
         static private short size = 1;
         static private short[][] sdk = new short[1][1];
         static private model.Sudoku sudoku = new model.Sudoku(sdk, (short)1);
     
-        public static void main(String[] args) {
-         
-        JDialog meinJDialog = new JDialog();
-        meinJDialog.setTitle("JPanel Beispiel");
-        meinJDialog.setSize(450,300);
- 
-        JPanel panel = new view.SizeChoosement();
-       
-        meinJDialog.add(panel);
+        static public JDialog window = new JDialog();
+        static public SudokuImportment sdkImp;
+        static public SizeChoosement szeCh;        
         
-        meinJDialog.setVisible(true);
+        public static void main(String[] args) {
+            window.setTitle("Sudoku");
+            window.setSize(450,300);
+            szeCh = new view.SizeChoosement();
+            window.add(szeCh);        
+            window.setVisible(true);
+        }
+        
             
-    }
+    
 
         
         public static void sudokuInitialisieren(short sze){
@@ -93,4 +96,7 @@ public class main {
 
 
 }
+        
+        
+        
 }

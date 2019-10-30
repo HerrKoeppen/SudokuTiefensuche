@@ -5,6 +5,8 @@
  */
 package view;
 
+import javax.swing.JDialog;
+
 /**
  *
  * @author lukas.leja
@@ -39,6 +41,11 @@ public class SizeChoosement extends javax.swing.JPanel {
 
         ButtonSize8.setFont(new java.awt.Font("Stencil", 0, 24)); // NOI18N
         ButtonSize8.setText("9x9");
+        ButtonSize8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ButtonSize8ActionPerformed(evt);
+            }
+        });
 
         ButtonSize16.setFont(new java.awt.Font("Stencil", 0, 24)); // NOI18N
         ButtonSize16.setText("16x16");
@@ -67,6 +74,16 @@ public class SizeChoosement extends javax.swing.JPanel {
                 .addContainerGap(131, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
+
+    private void ButtonSize8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonSize8ActionPerformed
+        control.main.window.dispose();
+        control.main.window = new JDialog();
+        control.main.window.setTitle("Sudoku");
+        control.main.window.setSize(400,500);
+        control.main.sdkImp = new view.SudokuImportment();
+        control.main.window.add(control.main.sdkImp);        
+        control.main.window.setVisible(true);
+    }//GEN-LAST:event_ButtonSize8ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
