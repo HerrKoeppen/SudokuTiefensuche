@@ -5,6 +5,8 @@
  */
 package view;
 
+import javax.swing.JDialog;
+
 /**
  *
  * @author zochrab.blume
@@ -192,7 +194,12 @@ public class SudokuImportment_4x4 extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void ZurückImpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ZurückImpActionPerformed
-        // TODO add your handling code here:
+        control.main.window = new JDialog();
+        control.main.window.setTitle("Sudoku");
+        control.main.window.setSize(450,300);
+        control.main.szeCh = new view.SizeChoosement();
+        control.main.window.add(control.main.szeCh);        
+        control.main.window.setVisible(true);
     }//GEN-LAST:event_ZurückImpActionPerformed
 
     private void LösenImpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LösenImpActionPerformed

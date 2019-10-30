@@ -27,7 +27,8 @@ public class main {
         static public JDialog window = new JDialog();
         static public SudokuImportment sdkImp;
         static public SizeChoosement szeCh;        
-        
+        static public SudokuImportment_4x4 sdkImp4;
+        static public SudokuImportment12x12 sdkImp12;
         public static void main(String[] args) {
             window.setTitle("Sudoku");
             window.setSize(450,300);

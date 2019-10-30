@@ -33,11 +33,16 @@ public class SizeChoosement extends javax.swing.JPanel {
         ButtonSize8 = new javax.swing.JButton();
         ButtonSize16 = new javax.swing.JButton();
 
-        setCursor(new java.awt.Cursor(java.awt.Cursor.WAIT_CURSOR));
+        setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setFont(new java.awt.Font("Stencil", 0, 24)); // NOI18N
 
         ButtonSize4.setFont(new java.awt.Font("Stencil", 0, 24)); // NOI18N
         ButtonSize4.setText("4x4");
+        ButtonSize4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ButtonSize4ActionPerformed(evt);
+            }
+        });
 
         ButtonSize8.setFont(new java.awt.Font("Stencil", 0, 24)); // NOI18N
         ButtonSize8.setText("9x9");
@@ -49,6 +54,11 @@ public class SizeChoosement extends javax.swing.JPanel {
 
         ButtonSize16.setFont(new java.awt.Font("Stencil", 0, 24)); // NOI18N
         ButtonSize16.setText("16x16");
+        ButtonSize16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ButtonSize16ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -84,6 +94,25 @@ public class SizeChoosement extends javax.swing.JPanel {
         control.main.window.add(control.main.sdkImp);        
         control.main.window.setVisible(true);
     }//GEN-LAST:event_ButtonSize8ActionPerformed
+
+    private void ButtonSize4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonSize4ActionPerformed
+        
+        control.main.window = new JDialog();
+        control.main.window.setTitle("Sudoku");
+        control.main.window.setSize(400,500);
+        control.main.sdkImp4 = new view.SudokuImportment_4x4();
+        control.main.window.add(control.main.sdkImp);        
+        control.main.window.setVisible(true);
+    }//GEN-LAST:event_ButtonSize4ActionPerformed
+
+    private void ButtonSize16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonSize16ActionPerformed
+        control.main.window = new JDialog();
+        control.main.window.setTitle("Sudoku");
+        control.main.window.setSize(400,500);
+        control.main.sdkImp12 = new view.SudokuImportment12x12();
+        control.main.window.add(control.main.sdkImp);        
+        control.main.window.setVisible(true);
+    }//GEN-LAST:event_ButtonSize16ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
