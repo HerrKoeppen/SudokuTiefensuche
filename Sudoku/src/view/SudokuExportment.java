@@ -7,9 +7,9 @@ package view;
 
 /**
  *
- * @author lukas.leja
+ * @author joshu
  */
-public class SudokuExportment extends javax.swing.JFrame {
+public class SudokuExportment extends javax.swing.JPanel {
 
     /**
      * Creates new form SudokuExportment
@@ -27,342 +27,170 @@ public class SudokuExportment extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        jTextPane34 = new javax.swing.JTextPane();
+        jTextPane72 = new javax.swing.JTextPane();
+        jTextPane68 = new javax.swing.JTextPane();
+        jTextPane30 = new javax.swing.JTextPane();
+        jTextPane61 = new javax.swing.JTextPane();
         jTextPane78 = new javax.swing.JTextPane();
-        jTextPane35 = new javax.swing.JTextPane();
-        jTextPane79 = new javax.swing.JTextPane();
-        jTextPane36 = new javax.swing.JTextPane();
-        jTextPane37 = new javax.swing.JTextPane();
-        jTextPane38 = new javax.swing.JTextPane();
         jTextPane39 = new javax.swing.JTextPane();
+        jTextPane34 = new javax.swing.JTextPane();
+        Imp14 = new javax.swing.JTextPane();
+        jTextPane36 = new javax.swing.JTextPane();
+        Imp6 = new javax.swing.JTextPane();
+        Imp9 = new javax.swing.JTextPane();
+        jTextPane48 = new javax.swing.JTextPane();
+        jTextPane56 = new javax.swing.JTextPane();
+        jTextPane43 = new javax.swing.JTextPane();
+        jTextPane46 = new javax.swing.JTextPane();
+        jTextPane59 = new javax.swing.JTextPane();
+        jTextPane62 = new javax.swing.JTextPane();
+        jTextPane44 = new javax.swing.JTextPane();
+        Imp10 = new javax.swing.JTextPane();
+        jTextPane77 = new javax.swing.JTextPane();
+        Imp11 = new javax.swing.JTextPane();
+        Imp2 = new javax.swing.JTextPane();
+        Imp16 = new javax.swing.JTextPane();
+        jButton2 = new javax.swing.JButton();
+        jTextPane33 = new javax.swing.JTextPane();
+        jButton1 = new javax.swing.JButton();
+        jTextPane51 = new javax.swing.JTextPane();
+        jTextPane24 = new javax.swing.JTextPane();
+        jTextPane27 = new javax.swing.JTextPane();
+        jTextPane20 = new javax.swing.JTextPane();
+        jTextPane60 = new javax.swing.JTextPane();
+        Imp5 = new javax.swing.JTextPane();
+        jTextPane74 = new javax.swing.JTextPane();
+        jTextPane22 = new javax.swing.JTextPane();
+        jTextPane28 = new javax.swing.JTextPane();
+        Imp3 = new javax.swing.JTextPane();
+        jLabel2 = new javax.swing.JLabel();
+        Imp17 = new javax.swing.JTextPane();
+        Imp13 = new javax.swing.JTextPane();
+        jTextPane75 = new javax.swing.JTextPane();
+        jTextPane54 = new javax.swing.JTextPane();
+        Imp15 = new javax.swing.JTextPane();
+        jTextPane70 = new javax.swing.JTextPane();
+        jTextPane25 = new javax.swing.JTextPane();
+        jTextPane38 = new javax.swing.JTextPane();
+        jTextPane55 = new javax.swing.JTextPane();
+        jTextPane37 = new javax.swing.JTextPane();
+        jTextPane21 = new javax.swing.JTextPane();
         jTextPane80 = new javax.swing.JTextPane();
-        jTextPane81 = new javax.swing.JTextPane();
+        jTextPane23 = new javax.swing.JTextPane();
+        jTextPane49 = new javax.swing.JTextPane();
+        Imp18 = new javax.swing.JTextPane();
+        jTextPane31 = new javax.swing.JTextPane();
+        jTextPane57 = new javax.swing.JTextPane();
+        ImportImp = new javax.swing.JButton();
+        jTextPane58 = new javax.swing.JTextPane();
+        jTextPane66 = new javax.swing.JTextPane();
+        jTextPane73 = new javax.swing.JTextPane();
+        Imp8 = new javax.swing.JTextPane();
+        Imp7 = new javax.swing.JTextPane();
+        jTextPane79 = new javax.swing.JTextPane();
+        Imp12 = new javax.swing.JTextPane();
+        jTextPane19 = new javax.swing.JTextPane();
+        jTextPane32 = new javax.swing.JTextPane();
+        Imp1 = new javax.swing.JTextPane();
         jTextPane40 = new javax.swing.JTextPane();
+        jTextPane52 = new javax.swing.JTextPane();
+        jTextPane26 = new javax.swing.JTextPane();
         jTextPane41 = new javax.swing.JTextPane();
         jTextPane42 = new javax.swing.JTextPane();
-        jTextPane43 = new javax.swing.JTextPane();
-        jTextPane44 = new javax.swing.JTextPane();
-        Imp1 = new javax.swing.JTextPane();
-        jTextPane45 = new javax.swing.JTextPane();
-        Imp2 = new javax.swing.JTextPane();
-        jTextPane46 = new javax.swing.JTextPane();
-        Imp3 = new javax.swing.JTextPane();
-        jTextPane47 = new javax.swing.JTextPane();
-        Imp4 = new javax.swing.JTextPane();
-        jTextPane48 = new javax.swing.JTextPane();
-        Imp5 = new javax.swing.JTextPane();
-        jTextPane49 = new javax.swing.JTextPane();
-        Imp6 = new javax.swing.JTextPane();
-        Imp7 = new javax.swing.JTextPane();
-        Imp8 = new javax.swing.JTextPane();
-        Imp9 = new javax.swing.JTextPane();
-        ImportImp = new javax.swing.JButton();
-        jTextPane50 = new javax.swing.JTextPane();
-        jTextPane51 = new javax.swing.JTextPane();
-        jTextPane52 = new javax.swing.JTextPane();
-        jTextPane53 = new javax.swing.JTextPane();
-        Imp10 = new javax.swing.JTextPane();
-        jTextPane54 = new javax.swing.JTextPane();
-        Imp11 = new javax.swing.JTextPane();
-        jTextPane55 = new javax.swing.JTextPane();
-        Imp12 = new javax.swing.JTextPane();
-        jTextPane56 = new javax.swing.JTextPane();
-        Imp13 = new javax.swing.JTextPane();
-        jTextPane57 = new javax.swing.JTextPane();
-        Imp14 = new javax.swing.JTextPane();
-        jTextPane58 = new javax.swing.JTextPane();
-        Imp15 = new javax.swing.JTextPane();
-        jTextPane59 = new javax.swing.JTextPane();
-        Imp16 = new javax.swing.JTextPane();
-        Imp17 = new javax.swing.JTextPane();
-        Imp18 = new javax.swing.JTextPane();
-        jTextPane19 = new javax.swing.JTextPane();
-        jTextPane60 = new javax.swing.JTextPane();
-        jTextPane61 = new javax.swing.JTextPane();
-        jTextPane62 = new javax.swing.JTextPane();
-        jTextPane63 = new javax.swing.JTextPane();
-        jTextPane20 = new javax.swing.JTextPane();
-        jTextPane64 = new javax.swing.JTextPane();
-        jTextPane21 = new javax.swing.JTextPane();
-        jTextPane65 = new javax.swing.JTextPane();
-        jTextPane22 = new javax.swing.JTextPane();
-        jTextPane66 = new javax.swing.JTextPane();
-        jTextPane23 = new javax.swing.JTextPane();
-        jTextPane67 = new javax.swing.JTextPane();
-        jTextPane24 = new javax.swing.JTextPane();
-        jTextPane68 = new javax.swing.JTextPane();
-        jTextPane25 = new javax.swing.JTextPane();
-        jTextPane69 = new javax.swing.JTextPane();
-        jTextPane26 = new javax.swing.JTextPane();
-        jTextPane27 = new javax.swing.JTextPane();
-        jTextPane28 = new javax.swing.JTextPane();
-        jTextPane29 = new javax.swing.JTextPane();
-        jTextPane70 = new javax.swing.JTextPane();
+        jTextPane81 = new javax.swing.JTextPane();
         jTextPane71 = new javax.swing.JTextPane();
-        jTextPane72 = new javax.swing.JTextPane();
-        jTextPane73 = new javax.swing.JTextPane();
-        jTextPane30 = new javax.swing.JTextPane();
-        jTextPane74 = new javax.swing.JTextPane();
-        jTextPane31 = new javax.swing.JTextPane();
-        jTextPane75 = new javax.swing.JTextPane();
-        jTextPane32 = new javax.swing.JTextPane();
         jTextPane76 = new javax.swing.JTextPane();
-        jTextPane33 = new javax.swing.JTextPane();
-        jTextPane77 = new javax.swing.JTextPane();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
-
-        jLabel1.setFont(new java.awt.Font("Arial Black", 0, 20)); // NOI18N
-        jLabel1.setText("9x9");
-
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
-        jTextPane34.setEditable(false);
-        jTextPane34.setMinimumSize(new java.awt.Dimension(24, 24));
-
-        jTextPane78.setEditable(false);
-        jTextPane78.setMinimumSize(new java.awt.Dimension(24, 24));
-
-        jTextPane35.setEditable(false);
-        jTextPane35.setMinimumSize(new java.awt.Dimension(24, 24));
-
-        jTextPane79.setEditable(false);
-        jTextPane79.setMinimumSize(new java.awt.Dimension(24, 24));
-
-        jTextPane36.setEditable(false);
-        jTextPane36.setMinimumSize(new java.awt.Dimension(24, 24));
-
-        jTextPane37.setEditable(false);
-        jTextPane37.setMinimumSize(new java.awt.Dimension(24, 24));
-
-        jTextPane38.setEditable(false);
-        jTextPane38.setMinimumSize(new java.awt.Dimension(24, 24));
-
-        jTextPane39.setEditable(false);
-        jTextPane39.setMinimumSize(new java.awt.Dimension(24, 24));
-
-        jTextPane80.setEditable(false);
-        jTextPane80.setMinimumSize(new java.awt.Dimension(24, 24));
-
-        jTextPane81.setEditable(false);
-        jTextPane81.setMinimumSize(new java.awt.Dimension(24, 24));
-
-        jTextPane40.setEditable(false);
-        jTextPane40.setMinimumSize(new java.awt.Dimension(24, 24));
-
-        jTextPane41.setEditable(false);
-        jTextPane41.setMinimumSize(new java.awt.Dimension(24, 24));
-
-        jTextPane42.setEditable(false);
-        jTextPane42.setMinimumSize(new java.awt.Dimension(24, 24));
-
-        jTextPane43.setEditable(false);
-        jTextPane43.setMinimumSize(new java.awt.Dimension(24, 24));
-
-        jTextPane44.setEditable(false);
-        jTextPane44.setMinimumSize(new java.awt.Dimension(24, 24));
-
-        Imp1.setEditable(false);
-        Imp1.setMinimumSize(new java.awt.Dimension(24, 24));
-
-        jTextPane45.setEditable(false);
-        jTextPane45.setMinimumSize(new java.awt.Dimension(24, 24));
-
-        Imp2.setEditable(false);
-        Imp2.setMinimumSize(new java.awt.Dimension(24, 24));
-
-        jTextPane46.setEditable(false);
-        jTextPane46.setMinimumSize(new java.awt.Dimension(24, 24));
-
-        Imp3.setEditable(false);
-        Imp3.setMinimumSize(new java.awt.Dimension(24, 24));
-
-        jTextPane47.setEditable(false);
-        jTextPane47.setMinimumSize(new java.awt.Dimension(24, 24));
-
-        Imp4.setEditable(false);
-        Imp4.setMinimumSize(new java.awt.Dimension(24, 24));
-
-        jTextPane48.setEditable(false);
-        jTextPane48.setMinimumSize(new java.awt.Dimension(24, 24));
-
-        Imp5.setEditable(false);
-        Imp5.setMinimumSize(new java.awt.Dimension(24, 24));
-
-        jTextPane49.setEditable(false);
-        jTextPane49.setMinimumSize(new java.awt.Dimension(24, 24));
-
-        Imp6.setEditable(false);
-        Imp6.setMinimumSize(new java.awt.Dimension(24, 24));
-
-        Imp7.setEditable(false);
-        Imp7.setMinimumSize(new java.awt.Dimension(24, 24));
-
-        Imp8.setEditable(false);
-        Imp8.setMinimumSize(new java.awt.Dimension(24, 24));
-
-        Imp9.setEditable(false);
-        Imp9.setMinimumSize(new java.awt.Dimension(24, 24));
-
-        ImportImp.setText("Export");
-
-        jTextPane50.setEditable(false);
-        jTextPane50.setMinimumSize(new java.awt.Dimension(24, 24));
-
-        jTextPane51.setEditable(false);
-        jTextPane51.setMinimumSize(new java.awt.Dimension(24, 24));
-
-        jTextPane52.setEditable(false);
-        jTextPane52.setMinimumSize(new java.awt.Dimension(24, 24));
-
-        jTextPane53.setEditable(false);
-        jTextPane53.setMinimumSize(new java.awt.Dimension(24, 24));
-
-        Imp10.setEditable(false);
-        Imp10.setMinimumSize(new java.awt.Dimension(24, 24));
-
-        jTextPane54.setEditable(false);
-        jTextPane54.setMinimumSize(new java.awt.Dimension(24, 24));
-
-        Imp11.setEditable(false);
-        Imp11.setMinimumSize(new java.awt.Dimension(24, 24));
-
-        jTextPane55.setEditable(false);
-        jTextPane55.setMinimumSize(new java.awt.Dimension(24, 24));
-
-        Imp12.setEditable(false);
-        Imp12.setMinimumSize(new java.awt.Dimension(24, 24));
-
-        jTextPane56.setEditable(false);
-        jTextPane56.setMinimumSize(new java.awt.Dimension(24, 24));
-
-        Imp13.setEditable(false);
-        Imp13.setMinimumSize(new java.awt.Dimension(24, 24));
-
-        jTextPane57.setEditable(false);
-        jTextPane57.setMinimumSize(new java.awt.Dimension(24, 24));
-
-        Imp14.setEditable(false);
-        Imp14.setMinimumSize(new java.awt.Dimension(24, 24));
-
-        jTextPane58.setEditable(false);
-        jTextPane58.setMinimumSize(new java.awt.Dimension(24, 24));
-
-        Imp15.setEditable(false);
-        Imp15.setMinimumSize(new java.awt.Dimension(24, 24));
-
-        jTextPane59.setEditable(false);
-        jTextPane59.setMinimumSize(new java.awt.Dimension(24, 24));
-
-        Imp16.setEditable(false);
-        Imp16.setMinimumSize(new java.awt.Dimension(24, 24));
-
-        Imp17.setEditable(false);
-        Imp17.setMinimumSize(new java.awt.Dimension(24, 24));
-
-        Imp18.setEditable(false);
-        Imp18.setMinimumSize(new java.awt.Dimension(24, 24));
-
-        jTextPane19.setEditable(false);
-        jTextPane19.setMinimumSize(new java.awt.Dimension(24, 24));
-
-        jTextPane60.setEditable(false);
-        jTextPane60.setMinimumSize(new java.awt.Dimension(24, 24));
-
-        jTextPane61.setEditable(false);
-        jTextPane61.setMinimumSize(new java.awt.Dimension(24, 24));
-
-        jTextPane62.setEditable(false);
-        jTextPane62.setMinimumSize(new java.awt.Dimension(24, 24));
-
-        jTextPane63.setEditable(false);
-        jTextPane63.setMinimumSize(new java.awt.Dimension(24, 24));
-
-        jTextPane20.setEditable(false);
-        jTextPane20.setMinimumSize(new java.awt.Dimension(24, 24));
-
-        jTextPane64.setEditable(false);
-        jTextPane64.setMinimumSize(new java.awt.Dimension(24, 24));
-
-        jTextPane21.setEditable(false);
-        jTextPane21.setMinimumSize(new java.awt.Dimension(24, 24));
-
-        jTextPane65.setEditable(false);
-        jTextPane65.setMinimumSize(new java.awt.Dimension(24, 24));
-
-        jTextPane22.setEditable(false);
-        jTextPane22.setMinimumSize(new java.awt.Dimension(24, 24));
-
-        jTextPane66.setEditable(false);
-        jTextPane66.setMinimumSize(new java.awt.Dimension(24, 24));
-
-        jTextPane23.setEditable(false);
-        jTextPane23.setMinimumSize(new java.awt.Dimension(24, 24));
-
-        jTextPane67.setEditable(false);
-        jTextPane67.setMinimumSize(new java.awt.Dimension(24, 24));
-
-        jTextPane24.setEditable(false);
-        jTextPane24.setMinimumSize(new java.awt.Dimension(24, 24));
-
-        jTextPane68.setEditable(false);
-        jTextPane68.setMinimumSize(new java.awt.Dimension(24, 24));
-
-        jTextPane25.setEditable(false);
-        jTextPane25.setMinimumSize(new java.awt.Dimension(24, 24));
-
-        jTextPane69.setEditable(false);
-        jTextPane69.setMinimumSize(new java.awt.Dimension(24, 24));
-
-        jTextPane26.setEditable(false);
-        jTextPane26.setMinimumSize(new java.awt.Dimension(24, 24));
-
-        jTextPane27.setEditable(false);
-        jTextPane27.setMinimumSize(new java.awt.Dimension(24, 24));
-
-        jTextPane28.setEditable(false);
-        jTextPane28.setMinimumSize(new java.awt.Dimension(24, 24));
-
-        jTextPane29.setEditable(false);
-        jTextPane29.setMinimumSize(new java.awt.Dimension(24, 24));
-
-        jTextPane70.setEditable(false);
-        jTextPane70.setMinimumSize(new java.awt.Dimension(24, 24));
-
-        jTextPane71.setEditable(false);
-        jTextPane71.setMinimumSize(new java.awt.Dimension(24, 24));
+        jTextPane69 = new javax.swing.JTextPane();
+        jTextPane67 = new javax.swing.JTextPane();
+        jTextPane65 = new javax.swing.JTextPane();
+        jTextPane53 = new javax.swing.JTextPane();
+        jTextPane29 = new javax.swing.JTextPane();
+        Imp4 = new javax.swing.JTextPane();
+        jTextPane50 = new javax.swing.JTextPane();
+        jTextPane45 = new javax.swing.JTextPane();
+        jTextPane64 = new javax.swing.JTextPane();
+        jTextPane63 = new javax.swing.JTextPane();
+        jTextPane47 = new javax.swing.JTextPane();
+        jTextPane35 = new javax.swing.JTextPane();
 
         jTextPane72.setEditable(false);
         jTextPane72.setMinimumSize(new java.awt.Dimension(24, 24));
 
-        jTextPane73.setEditable(false);
-        jTextPane73.setMinimumSize(new java.awt.Dimension(24, 24));
+        jTextPane68.setEditable(false);
+        jTextPane68.setMinimumSize(new java.awt.Dimension(24, 24));
 
         jTextPane30.setEditable(false);
         jTextPane30.setMinimumSize(new java.awt.Dimension(24, 24));
 
-        jTextPane74.setEditable(false);
-        jTextPane74.setMinimumSize(new java.awt.Dimension(24, 24));
+        jTextPane61.setEditable(false);
+        jTextPane61.setMinimumSize(new java.awt.Dimension(24, 24));
 
-        jTextPane31.setEditable(false);
-        jTextPane31.setMinimumSize(new java.awt.Dimension(24, 24));
+        jTextPane78.setEditable(false);
+        jTextPane78.setMinimumSize(new java.awt.Dimension(24, 24));
 
-        jTextPane75.setEditable(false);
-        jTextPane75.setMinimumSize(new java.awt.Dimension(24, 24));
+        jTextPane39.setEditable(false);
+        jTextPane39.setMinimumSize(new java.awt.Dimension(24, 24));
 
-        jTextPane32.setEditable(false);
-        jTextPane32.setMinimumSize(new java.awt.Dimension(24, 24));
+        jTextPane34.setEditable(false);
+        jTextPane34.setMinimumSize(new java.awt.Dimension(24, 24));
 
-        jTextPane76.setEditable(false);
-        jTextPane76.setMinimumSize(new java.awt.Dimension(24, 24));
+        Imp14.setEditable(false);
+        Imp14.setMinimumSize(new java.awt.Dimension(24, 24));
 
-        jTextPane33.setEditable(false);
-        jTextPane33.setMinimumSize(new java.awt.Dimension(24, 24));
+        jTextPane36.setEditable(false);
+        jTextPane36.setMinimumSize(new java.awt.Dimension(24, 24));
+
+        Imp6.setEditable(false);
+        Imp6.setMinimumSize(new java.awt.Dimension(24, 24));
+
+        Imp9.setEditable(false);
+        Imp9.setMinimumSize(new java.awt.Dimension(24, 24));
+
+        jTextPane48.setEditable(false);
+        jTextPane48.setMinimumSize(new java.awt.Dimension(24, 24));
+
+        jTextPane56.setEditable(false);
+        jTextPane56.setMinimumSize(new java.awt.Dimension(24, 24));
+
+        jTextPane43.setEditable(false);
+        jTextPane43.setMinimumSize(new java.awt.Dimension(24, 24));
+
+        jTextPane46.setEditable(false);
+        jTextPane46.setMinimumSize(new java.awt.Dimension(24, 24));
+
+        jTextPane59.setEditable(false);
+        jTextPane59.setMinimumSize(new java.awt.Dimension(24, 24));
+
+        jTextPane62.setEditable(false);
+        jTextPane62.setMinimumSize(new java.awt.Dimension(24, 24));
+
+        jTextPane44.setEditable(false);
+        jTextPane44.setMinimumSize(new java.awt.Dimension(24, 24));
+
+        Imp10.setEditable(false);
+        Imp10.setMinimumSize(new java.awt.Dimension(24, 24));
 
         jTextPane77.setEditable(false);
         jTextPane77.setMinimumSize(new java.awt.Dimension(24, 24));
+
+        Imp11.setEditable(false);
+        Imp11.setMinimumSize(new java.awt.Dimension(24, 24));
+
+        Imp2.setEditable(false);
+        Imp2.setMinimumSize(new java.awt.Dimension(24, 24));
+
+        Imp16.setEditable(false);
+        Imp16.setMinimumSize(new java.awt.Dimension(24, 24));
+
+        jButton2.setText("Exit");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+
+        jTextPane33.setEditable(false);
+        jTextPane33.setMinimumSize(new java.awt.Dimension(24, 24));
 
         jButton1.setText("Neues Sudoku?");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -371,13 +199,184 @@ public class SudokuExportment extends javax.swing.JFrame {
             }
         });
 
-        jButton2.setText("Exit");
+        jTextPane51.setEditable(false);
+        jTextPane51.setMinimumSize(new java.awt.Dimension(24, 24));
+
+        jTextPane24.setEditable(false);
+        jTextPane24.setMinimumSize(new java.awt.Dimension(24, 24));
+
+        jTextPane27.setEditable(false);
+        jTextPane27.setMinimumSize(new java.awt.Dimension(24, 24));
+
+        jTextPane20.setEditable(false);
+        jTextPane20.setMinimumSize(new java.awt.Dimension(24, 24));
+
+        jTextPane60.setEditable(false);
+        jTextPane60.setMinimumSize(new java.awt.Dimension(24, 24));
+
+        Imp5.setEditable(false);
+        Imp5.setMinimumSize(new java.awt.Dimension(24, 24));
+
+        jTextPane74.setEditable(false);
+        jTextPane74.setMinimumSize(new java.awt.Dimension(24, 24));
+
+        jTextPane22.setEditable(false);
+        jTextPane22.setMinimumSize(new java.awt.Dimension(24, 24));
+
+        jTextPane28.setEditable(false);
+        jTextPane28.setMinimumSize(new java.awt.Dimension(24, 24));
+
+        Imp3.setEditable(false);
+        Imp3.setMinimumSize(new java.awt.Dimension(24, 24));
 
         jLabel2.setFont(new java.awt.Font("Arial Black", 0, 20)); // NOI18N
         jLabel2.setText("9x9");
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
+        Imp17.setEditable(false);
+        Imp17.setMinimumSize(new java.awt.Dimension(24, 24));
+
+        Imp13.setEditable(false);
+        Imp13.setMinimumSize(new java.awt.Dimension(24, 24));
+
+        jTextPane75.setEditable(false);
+        jTextPane75.setMinimumSize(new java.awt.Dimension(24, 24));
+
+        jTextPane54.setEditable(false);
+        jTextPane54.setMinimumSize(new java.awt.Dimension(24, 24));
+
+        Imp15.setEditable(false);
+        Imp15.setMinimumSize(new java.awt.Dimension(24, 24));
+
+        jTextPane70.setEditable(false);
+        jTextPane70.setMinimumSize(new java.awt.Dimension(24, 24));
+
+        jTextPane25.setEditable(false);
+        jTextPane25.setMinimumSize(new java.awt.Dimension(24, 24));
+
+        jTextPane38.setEditable(false);
+        jTextPane38.setMinimumSize(new java.awt.Dimension(24, 24));
+
+        jTextPane55.setEditable(false);
+        jTextPane55.setMinimumSize(new java.awt.Dimension(24, 24));
+
+        jTextPane37.setEditable(false);
+        jTextPane37.setMinimumSize(new java.awt.Dimension(24, 24));
+
+        jTextPane21.setEditable(false);
+        jTextPane21.setMinimumSize(new java.awt.Dimension(24, 24));
+
+        jTextPane80.setEditable(false);
+        jTextPane80.setMinimumSize(new java.awt.Dimension(24, 24));
+
+        jTextPane23.setEditable(false);
+        jTextPane23.setMinimumSize(new java.awt.Dimension(24, 24));
+
+        jTextPane49.setEditable(false);
+        jTextPane49.setMinimumSize(new java.awt.Dimension(24, 24));
+
+        Imp18.setEditable(false);
+        Imp18.setMinimumSize(new java.awt.Dimension(24, 24));
+
+        jTextPane31.setEditable(false);
+        jTextPane31.setMinimumSize(new java.awt.Dimension(24, 24));
+
+        jTextPane57.setEditable(false);
+        jTextPane57.setMinimumSize(new java.awt.Dimension(24, 24));
+
+        ImportImp.setText("Export");
+
+        jTextPane58.setEditable(false);
+        jTextPane58.setMinimumSize(new java.awt.Dimension(24, 24));
+
+        jTextPane66.setEditable(false);
+        jTextPane66.setMinimumSize(new java.awt.Dimension(24, 24));
+
+        jTextPane73.setEditable(false);
+        jTextPane73.setMinimumSize(new java.awt.Dimension(24, 24));
+
+        Imp8.setEditable(false);
+        Imp8.setMinimumSize(new java.awt.Dimension(24, 24));
+
+        Imp7.setEditable(false);
+        Imp7.setMinimumSize(new java.awt.Dimension(24, 24));
+
+        jTextPane79.setEditable(false);
+        jTextPane79.setMinimumSize(new java.awt.Dimension(24, 24));
+
+        Imp12.setEditable(false);
+        Imp12.setMinimumSize(new java.awt.Dimension(24, 24));
+
+        jTextPane19.setEditable(false);
+        jTextPane19.setMinimumSize(new java.awt.Dimension(24, 24));
+
+        jTextPane32.setEditable(false);
+        jTextPane32.setMinimumSize(new java.awt.Dimension(24, 24));
+
+        Imp1.setEditable(false);
+        Imp1.setMinimumSize(new java.awt.Dimension(24, 24));
+
+        jTextPane40.setEditable(false);
+        jTextPane40.setMinimumSize(new java.awt.Dimension(24, 24));
+
+        jTextPane52.setEditable(false);
+        jTextPane52.setMinimumSize(new java.awt.Dimension(24, 24));
+
+        jTextPane26.setEditable(false);
+        jTextPane26.setMinimumSize(new java.awt.Dimension(24, 24));
+
+        jTextPane41.setEditable(false);
+        jTextPane41.setMinimumSize(new java.awt.Dimension(24, 24));
+
+        jTextPane42.setEditable(false);
+        jTextPane42.setMinimumSize(new java.awt.Dimension(24, 24));
+
+        jTextPane81.setEditable(false);
+        jTextPane81.setMinimumSize(new java.awt.Dimension(24, 24));
+
+        jTextPane71.setEditable(false);
+        jTextPane71.setMinimumSize(new java.awt.Dimension(24, 24));
+
+        jTextPane76.setEditable(false);
+        jTextPane76.setMinimumSize(new java.awt.Dimension(24, 24));
+
+        jTextPane69.setEditable(false);
+        jTextPane69.setMinimumSize(new java.awt.Dimension(24, 24));
+
+        jTextPane67.setEditable(false);
+        jTextPane67.setMinimumSize(new java.awt.Dimension(24, 24));
+
+        jTextPane65.setEditable(false);
+        jTextPane65.setMinimumSize(new java.awt.Dimension(24, 24));
+
+        jTextPane53.setEditable(false);
+        jTextPane53.setMinimumSize(new java.awt.Dimension(24, 24));
+
+        jTextPane29.setEditable(false);
+        jTextPane29.setMinimumSize(new java.awt.Dimension(24, 24));
+
+        Imp4.setEditable(false);
+        Imp4.setMinimumSize(new java.awt.Dimension(24, 24));
+
+        jTextPane50.setEditable(false);
+        jTextPane50.setMinimumSize(new java.awt.Dimension(24, 24));
+
+        jTextPane45.setEditable(false);
+        jTextPane45.setMinimumSize(new java.awt.Dimension(24, 24));
+
+        jTextPane64.setEditable(false);
+        jTextPane64.setMinimumSize(new java.awt.Dimension(24, 24));
+
+        jTextPane63.setEditable(false);
+        jTextPane63.setMinimumSize(new java.awt.Dimension(24, 24));
+
+        jTextPane47.setEditable(false);
+        jTextPane47.setMinimumSize(new java.awt.Dimension(24, 24));
+
+        jTextPane35.setEditable(false);
+        jTextPane35.setMinimumSize(new java.awt.Dimension(24, 24));
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
+        this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
@@ -676,50 +675,22 @@ public class SudokuExportment extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton1)
                     .addComponent(jButton2))
-                .addContainerGap(32, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-
-        pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
+        control.main.window.remove(this);
+        control.main.window.setSize(450,300);
+        control.main.szeCh = new view.SizeChoosement();
+        control.main.window.add(control.main.szeCh);
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(SudokuExportment.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(SudokuExportment.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(SudokuExportment.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(SudokuExportment.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        control.main.window.remove(this);
+        control.main.window.dispose();
+    }//GEN-LAST:event_jButton2ActionPerformed
 
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new SudokuExportment().setVisible(true);
-            }
-        });
-    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextPane Imp1;
@@ -743,7 +714,6 @@ public class SudokuExportment extends javax.swing.JFrame {
     private javax.swing.JButton ImportImp;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JTextPane jTextPane19;
     private javax.swing.JTextPane jTextPane20;

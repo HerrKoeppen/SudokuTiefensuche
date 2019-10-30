@@ -5,9 +5,8 @@
  */
 package model;
 
-import java.util.ArrayList;
-import java.util.Collections;
 import javax.swing.JDialog;
+import javax.swing.WindowConstants;
 
 /**
  *
@@ -70,25 +69,18 @@ public class Sudoku {
                               //Benötigt, um vorgegebene Zellen überspringen zu können
         //ArrayList blaetter = new ArrayList<Integer>();
         
-                
         while(!done){
             anzRekAuf++;
             if(!werteNetz[ix][iy].isStatisch()){ //überspringe vorgegebene Zellen
-                
                 if(werteNetz[ix][iy].naechsteEinsetzen(ix, iy, size)) {
                     goNext = true;
                     
                 }       //Einsetzen der nächstgrößten, einsetzbaren Zahl
                 else {  //und setzen der Bewegrichtung
                     goNext = false;
-                    //blaetter.add((ix * size) + iy +1);
                     anzBlaetter++;
                 }
                 control.main.setSdkVal(ix, iy, werteNetz[ix][iy].getWert());
-                try{
-                    Thread.sleep(100);
-                }
-                catch(InterruptedException ex){}
                 anzKnoten++;
                 
                 if(size <= 9){
@@ -129,26 +121,28 @@ public class Sudoku {
                     else { //sudoku ist nicht lösbar
                         done = true;
                         loesbar = false;
-                        }
                     }
                 }
             }
-            geloest = true;
-            if(loesbar){
-                JDialog popup = new JDialog();
-                popup.setTitle("Erfolg!");
-                popup.setSize(440,250);
-                popup.add(new view.SudokuGeloest(popup));        
-                popup.setVisible(true);
-            }
-            else{
-                JDialog popup = new JDialog();
-                popup.setTitle("Erfolg!");
-                popup.setSize(440,250);
-                popup.add(new view.SudokuNichtGeloest(popup));        
-                popup.setVisible(true);
-            }
         }
+        geloest = true;
+        if(loesbar){
+            JDialog popup = new JDialog();
+            popup.setTitle("Erfolg!");
+            popup.setSize(440,250);
+            popup.add(new view.SudokuGeloest(popup));        
+            popup.setVisible(true);
+            popup.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
+        }
+        else{
+            JDialog popup = new JDialog();
+            popup.setTitle("Erfolg!");
+            popup.setSize(440,250);
+            popup.add(new view.SudokuNichtGeloest(popup));        
+            popup.setVisible(true);
+            popup.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
+        }
+    }
     
     public boolean geloest(){
         return geloest;

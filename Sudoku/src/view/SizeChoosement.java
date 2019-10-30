@@ -87,28 +87,25 @@ public class SizeChoosement extends javax.swing.JPanel {
 
     private void ButtonSize8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonSize8ActionPerformed
         control.main.window.remove(this);
-        control.main.window.setSize(400,500);
+        control.main.window.setSize(410,460);
         control.main.sdkImp = new view.SudokuImportment();
-        control.main.window.add(control.main.sdkImp);        
-        control.main.window.setVisible(true);
+        control.main.window.add(control.main.sdkImp);
         control.main.size = 9;
     }//GEN-LAST:event_ButtonSize8ActionPerformed
 
     private void ButtonSize4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonSize4ActionPerformed
         control.main.window.remove(this);
-        control.main.window.setSize(400,500);
+        control.main.window.setSize(340,360);
         control.main.sdkImp4 = new view.SudokuImportment4x4();
-        control.main.window.add(control.main.sdkImp4);        
-        control.main.window.setVisible(true);
+        control.main.window.add(control.main.sdkImp4);
         control.main.size = 4;
     }//GEN-LAST:event_ButtonSize4ActionPerformed
 
     private void ButtonSize16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonSize16ActionPerformed
         control.main.window.remove(this);
-        control.main.window.setSize(400,500);
+        control.main.window.setSize(600,660);
         control.main.sdkImp16 = new view.SudokuImportment16x16();
-        control.main.window.add(control.main.sdkImp16);        
-        control.main.window.setVisible(true);
+        control.main.window.add(control.main.sdkImp16);
         control.main.size = 16;
     }//GEN-LAST:event_ButtonSize16ActionPerformed
 

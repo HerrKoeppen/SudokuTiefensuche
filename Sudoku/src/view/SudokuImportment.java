@@ -611,7 +611,104 @@ public class SudokuImportment extends javax.swing.JPanel {
     }//GEN-LAST:event_ZurückImpActionPerformed
 
     private void LösenImpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LösenImpActionPerformed
-   
+        control.main.window.remove(this);
+        control.main.sdkExp = new view.SudokuExportment();
+        control.main.window.add(control.main.sdkExp);
+
+        control.main.sudokuInitialisieren((short)9);
+        /*
+        control.main.zelleVeraendern((short)0, (short)0, L1x1.getText());
+        control.main.zelleVeraendern((short)0, (short)1, L1x2.getText());
+        control.main.zelleVeraendern((short)0, (short)2, L1x3.getText());
+        control.main.zelleVeraendern((short)0, (short)3, L1x4.getText());
+        control.main.zelleVeraendern((short)0, (short)4, L1x5.getText());
+        control.main.zelleVeraendern((short)0, (short)5, L1x6.getText());
+        control.main.zelleVeraendern((short)0, (short)6, L1x7.getText());
+        control.main.zelleVeraendern((short)0, (short)7, L1x8.getText());
+        control.main.zelleVeraendern((short)0, (short)8, L1x9.getText());
+        
+        control.main.zelleVeraendern((short)1, (short)0, L2x1.getText());
+        control.main.zelleVeraendern((short)1, (short)1, L2x2.getText());
+        control.main.zelleVeraendern((short)1, (short)2, L2x3.getText());
+        control.main.zelleVeraendern((short)1, (short)3, L2x4.getText());
+        control.main.zelleVeraendern((short)1, (short)4, L2x5.getText());
+        control.main.zelleVeraendern((short)1, (short)5, L2x6.getText());
+        control.main.zelleVeraendern((short)1, (short)6, L2x7.getText());
+        control.main.zelleVeraendern((short)1, (short)7, L2x8.getText());
+        control.main.zelleVeraendern((short)1, (short)8, L2x9.getText());
+        
+        control.main.zelleVeraendern((short)2, (short)0, L3x1.getText());
+        control.main.zelleVeraendern((short)2, (short)1, L3x2.getText());
+        control.main.zelleVeraendern((short)2, (short)2, L3x3.getText());
+        control.main.zelleVeraendern((short)2, (short)3, L3x4.getText());
+        control.main.zelleVeraendern((short)2, (short)4, L3x5.getText());
+        control.main.zelleVeraendern((short)2, (short)5, L3x6.getText());
+        control.main.zelleVeraendern((short)2, (short)6, L3x7.getText());
+        control.main.zelleVeraendern((short)2, (short)7, L3x8.getText());
+        control.main.zelleVeraendern((short)2, (short)8, L3x9.getText());
+        
+        control.main.zelleVeraendern((short)3, (short)0, L4x1.getText());
+        control.main.zelleVeraendern((short)3, (short)1, L4x2.getText());
+        control.main.zelleVeraendern((short)3, (short)2, L4x3.getText());
+        control.main.zelleVeraendern((short)3, (short)3, L4x4.getText());
+        control.main.zelleVeraendern((short)3, (short)4, L4x5.getText());
+        control.main.zelleVeraendern((short)3, (short)5, L4x6.getText());
+        control.main.zelleVeraendern((short)3, (short)6, L4x7.getText());
+        control.main.zelleVeraendern((short)3, (short)7, L4x8.getText());
+        control.main.zelleVeraendern((short)3, (short)8, L4x9.getText());
+        
+        control.main.zelleVeraendern((short)4, (short)0, L5x1.getText());
+        control.main.zelleVeraendern((short)4, (short)1, L5x2.getText());
+        control.main.zelleVeraendern((short)4, (short)2, L5x3.getText());
+        control.main.zelleVeraendern((short)4, (short)3, L5x4.getText());
+        control.main.zelleVeraendern((short)4, (short)4, L5x5.getText());
+        control.main.zelleVeraendern((short)4, (short)5, L5x6.getText());
+        control.main.zelleVeraendern((short)4, (short)6, L5x7.getText());
+        control.main.zelleVeraendern((short)4, (short)7, L5x8.getText());
+        control.main.zelleVeraendern((short)4, (short)8, L5x9.getText());
+        
+        control.main.zelleVeraendern((short)5, (short)0, L6x1.getText());
+        control.main.zelleVeraendern((short)5, (short)1, L6x2.getText());
+        control.main.zelleVeraendern((short)5, (short)2, L6x3.getText());
+        control.main.zelleVeraendern((short)5, (short)3, L6x4.getText());
+        control.main.zelleVeraendern((short)5, (short)4, L6x5.getText());
+        control.main.zelleVeraendern((short)5, (short)5, L6x6.getText());
+        control.main.zelleVeraendern((short)5, (short)6, L6x7.getText());
+        control.main.zelleVeraendern((short)5, (short)7, L6x8.getText());
+        control.main.zelleVeraendern((short)5, (short)8, L6x9.getText());
+        
+        control.main.zelleVeraendern((short)6, (short)0, L7x1.getText());
+        control.main.zelleVeraendern((short)6, (short)1, L7x2.getText());
+        control.main.zelleVeraendern((short)6, (short)2, L7x3.getText());
+        control.main.zelleVeraendern((short)6, (short)3, L7x4.getText());
+        control.main.zelleVeraendern((short)6, (short)4, L7x5.getText());
+        control.main.zelleVeraendern((short)6, (short)5, L7x6.getText());
+        control.main.zelleVeraendern((short)6, (short)6, L7x7.getText());
+        control.main.zelleVeraendern((short)6, (short)7, L7x8.getText());
+        control.main.zelleVeraendern((short)6, (short)8, L7x9.getText());
+        
+        control.main.zelleVeraendern((short)7, (short)0, L8x1.getText());
+        control.main.zelleVeraendern((short)7, (short)1, L8x2.getText());
+        control.main.zelleVeraendern((short)7, (short)2, L8x3.getText());
+        control.main.zelleVeraendern((short)7, (short)3, L8x4.getText());
+        control.main.zelleVeraendern((short)7, (short)4, L8x5.getText());
+        control.main.zelleVeraendern((short)7, (short)5, L8x6.getText());
+        control.main.zelleVeraendern((short)7, (short)6, L8x7.getText());
+        control.main.zelleVeraendern((short)7, (short)7, L8x8.getText());
+        control.main.zelleVeraendern((short)7, (short)8, L8x9.getText());
+        
+        control.main.zelleVeraendern((short)8, (short)0, L9x1.getText());
+        control.main.zelleVeraendern((short)8, (short)1, L9x2.getText());
+        control.main.zelleVeraendern((short)8, (short)2, L9x3.getText());
+        control.main.zelleVeraendern((short)8, (short)3, L9x4.getText());
+        control.main.zelleVeraendern((short)8, (short)4, L9x5.getText());
+        control.main.zelleVeraendern((short)8, (short)5, L9x6.getText());
+        control.main.zelleVeraendern((short)8, (short)6, L9x7.getText());
+        control.main.zelleVeraendern((short)8, (short)7, L9x8.getText());
+        control.main.zelleVeraendern((short)8, (short)8, L9x9.getText());
+        */
+        control.main.sudokuErstellen();
+        control.main.sudokuLoesen();
     }//GEN-LAST:event_LösenImpActionPerformed
 
 

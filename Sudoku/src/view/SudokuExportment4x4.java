@@ -110,6 +110,11 @@ public class SudokuExportment4x4 extends javax.swing.JPanel {
         });
 
         jButton2.setText("Exit");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -219,9 +224,16 @@ public class SudokuExportment4x4 extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
+        control.main.window.remove(this);
+        control.main.window.setSize(450,300);
+        control.main.szeCh = new view.SizeChoosement();
+        control.main.window.add(control.main.szeCh);
     }//GEN-LAST:event_jButton1ActionPerformed
 
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        control.main.window.remove(this);
+        control.main.window.dispose();
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton ImportImp;
@@ -246,4 +258,123 @@ public class SudokuExportment4x4 extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
+
+    /**
+     * @return the L1x1
+     */
+    public javax.swing.JTextPane getL1x1() {
+        return L1x1;
+    }
+
+    /**
+     * @return the L1x2
+     */
+    public javax.swing.JTextPane getL1x2() {
+        return L1x2;
+    }
+
+    /**
+     * @return the L1x3
+     */
+    public javax.swing.JTextPane getL1x3() {
+        return L1x3;
+    }
+
+    /**
+     * @return the L1x4
+     */
+    public javax.swing.JTextPane getL1x4() {
+        return L1x4;
+    }
+
+    /**
+     * @return the L2x1
+     */
+    public javax.swing.JTextPane getL2x1() {
+        return L2x1;
+    }
+
+    /**
+     * @return the L2x2
+     */
+    public javax.swing.JTextPane getL2x2() {
+        return L2x2;
+    }
+
+    /**
+     * @return the L2x3
+     */
+    public javax.swing.JTextPane getL2x3() {
+        return L2x3;
+    }
+
+    /**
+     * @return the L2x4
+     */
+    public javax.swing.JTextPane getL2x4() {
+        return L2x4;
+    }
+
+    /**
+     * @return the L3x1
+     */
+    public javax.swing.JTextPane getL3x1() {
+        return L3x1;
+    }
+
+    /**
+     * @return the L3x2
+     */
+    public javax.swing.JTextPane getL3x2() {
+        return L3x2;
+    }
+
+    /**
+     * @return the L3x3
+     */
+    public javax.swing.JTextPane getL3x3() {
+        return L3x3;
+    }
+
+    /**
+     * @return the L3x4
+     */
+    public javax.swing.JTextPane getL3x4() {
+        return L3x4;
+    }
+
+    /**
+     * @return the L4x1
+     */
+    public javax.swing.JTextPane getL4x1() {
+        return L4x1;
+    }
+
+    /**
+     * @return the L4x2
+     */
+    public javax.swing.JTextPane getL4x2() {
+        return L4x2;
+    }
+
+    /**
+     * @return the L4x3
+     */
+    public javax.swing.JTextPane getL4x3() {
+        return L4x3;
+    }
+
+    /**
+     * @return the L4x4
+     */
+    public javax.swing.JTextPane getL4x4() {
+        return L4x4;
+    }
+
+    /**
+     * @param L3x1 the L3x1 to set
+     */
+    public void setL3x1(javax.swing.JTextPane L3x1) {
+        this.L3x1 = L3x1;
+    }
 }

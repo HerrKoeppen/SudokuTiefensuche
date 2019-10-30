@@ -7,6 +7,7 @@ package view;
 
 import javax.swing.JDialog;
 
+
 /**
  *
  * @author zochrab.blume
@@ -95,6 +96,9 @@ public class SudokuImportment4x4 extends javax.swing.JPanel {
         L4x3.setMinimumSize(new java.awt.Dimension(24, 24));
 
         LösenImp.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/Lösen Knopf text klein.png"))); // NOI18N
+        LösenImp.setBorder(null);
+        LösenImp.setBorderPainted(false);
+        LösenImp.setContentAreaFilled(false);
         LösenImp.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 LösenImpActionPerformed(evt);
@@ -202,7 +206,34 @@ public class SudokuImportment4x4 extends javax.swing.JPanel {
     }//GEN-LAST:event_ZurückImpActionPerformed
 
     private void LösenImpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LösenImpActionPerformed
-        // TODO add your handling code here:
+        control.main.window.remove(this);
+        control.main.sdkExp4 = new view.SudokuExportment4x4();
+        control.main.window.add(control.main.sdkExp4);
+
+        control.main.sudokuInitialisieren((short)4);
+        
+        control.main.zelleVeraendern((short)0, (short)0, L1x1.getText());
+        control.main.zelleVeraendern((short)0, (short)1, L1x2.getText());
+        control.main.zelleVeraendern((short)0, (short)2, L1x3.getText());
+        control.main.zelleVeraendern((short)0, (short)3, L1x4.getText());
+        
+        control.main.zelleVeraendern((short)1, (short)0, L2x1.getText());
+        control.main.zelleVeraendern((short)1, (short)1, L2x2.getText());
+        control.main.zelleVeraendern((short)1, (short)2, L2x3.getText());
+        control.main.zelleVeraendern((short)1, (short)3, L2x4.getText());
+        
+        control.main.zelleVeraendern((short)2, (short)0, L3x1.getText());
+        control.main.zelleVeraendern((short)2, (short)1, L3x2.getText());
+        control.main.zelleVeraendern((short)2, (short)2, L3x3.getText());
+        control.main.zelleVeraendern((short)2, (short)3, L3x4.getText());
+        
+        control.main.zelleVeraendern((short)3, (short)0, L4x1.getText());
+        control.main.zelleVeraendern((short)3, (short)1, L4x2.getText());
+        control.main.zelleVeraendern((short)3, (short)2, L4x3.getText());
+        control.main.zelleVeraendern((short)3, (short)3, L4x4.getText());
+        
+        control.main.sudokuErstellen();
+        control.main.sudokuLoesen();
     }//GEN-LAST:event_LösenImpActionPerformed
 
 

@@ -333,6 +333,11 @@ public class SudokuExportment16x16 extends javax.swing.JPanel {
         });
 
         jButton2.setText("Exit");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         jTextPane139.setEditable(false);
         jTextPane139.setMinimumSize(new java.awt.Dimension(24, 24));
@@ -2054,8 +2059,16 @@ public class SudokuExportment16x16 extends javax.swing.JPanel {
     }//GEN-LAST:event_ImportImpActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
+        control.main.window.remove(this);
+        control.main.window.setSize(450,300);
+        control.main.szeCh = new view.SizeChoosement();
+        control.main.window.add(control.main.szeCh);
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        control.main.window.remove(this);
+        control.main.window.dispose();
+    }//GEN-LAST:event_jButton2ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
