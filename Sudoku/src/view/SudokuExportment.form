@@ -384,6 +384,7 @@
   <SubComponents>
     <Component class="javax.swing.JTextPane" name="jTextPane34">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -391,6 +392,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="jTextPane78">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -398,6 +400,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="jTextPane35">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -405,6 +408,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="jTextPane79">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -412,6 +416,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="jTextPane36">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -419,6 +424,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="jTextPane37">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -426,6 +432,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="jTextPane38">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -433,6 +440,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="jTextPane39">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -440,6 +448,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="jTextPane80">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -447,6 +456,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="jTextPane81">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -454,6 +464,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="jTextPane40">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -461,6 +472,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="jTextPane41">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -468,6 +480,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="jTextPane42">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -475,6 +488,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="jTextPane43">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -482,6 +496,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="jTextPane44">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -489,6 +504,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="Imp1">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -496,6 +512,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="jTextPane45">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -503,6 +520,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="Imp2">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -510,6 +528,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="jTextPane46">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -517,6 +536,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="Imp3">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -524,6 +544,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="jTextPane47">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -531,6 +552,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="Imp4">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -538,6 +560,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="jTextPane48">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -545,6 +568,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="Imp5">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -552,6 +576,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="jTextPane49">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -559,6 +584,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="Imp6">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -566,6 +592,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="Imp7">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -573,6 +600,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="Imp8">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -580,6 +608,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="Imp9">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -592,6 +621,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="jTextPane50">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -599,6 +629,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="jTextPane51">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -606,6 +637,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="jTextPane52">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -613,6 +645,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="jTextPane53">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -620,6 +653,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="Imp10">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -627,6 +661,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="jTextPane54">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -634,6 +669,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="Imp11">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -641,6 +677,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="jTextPane55">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -648,6 +685,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="Imp12">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -655,6 +693,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="jTextPane56">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -662,6 +701,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="Imp13">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -669,6 +709,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="jTextPane57">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -676,6 +717,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="Imp14">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -683,6 +725,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="jTextPane58">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -690,6 +733,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="Imp15">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -697,6 +741,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="jTextPane59">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -704,6 +749,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="Imp16">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -711,6 +757,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="Imp17">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -718,6 +765,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="Imp18">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -725,6 +773,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="jTextPane19">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -732,6 +781,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="jTextPane60">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -739,6 +789,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="jTextPane61">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -746,6 +797,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="jTextPane62">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -753,6 +805,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="jTextPane63">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -760,6 +813,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="jTextPane20">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -767,6 +821,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="jTextPane64">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -774,6 +829,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="jTextPane21">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -781,6 +837,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="jTextPane65">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -788,6 +845,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="jTextPane22">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -795,6 +853,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="jTextPane66">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -802,6 +861,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="jTextPane23">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -809,6 +869,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="jTextPane67">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -816,6 +877,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="jTextPane24">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -823,6 +885,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="jTextPane68">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -830,6 +893,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="jTextPane25">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -837,6 +901,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="jTextPane69">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -844,6 +909,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="jTextPane26">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -851,6 +917,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="jTextPane27">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -858,6 +925,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="jTextPane28">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -865,6 +933,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="jTextPane29">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -872,6 +941,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="jTextPane70">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -879,6 +949,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="jTextPane71">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -886,6 +957,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="jTextPane72">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -893,6 +965,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="jTextPane73">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -900,6 +973,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="jTextPane30">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -907,6 +981,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="jTextPane74">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -914,6 +989,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="jTextPane31">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -921,6 +997,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="jTextPane75">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -928,6 +1005,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="jTextPane32">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -935,6 +1013,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="jTextPane76">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -942,6 +1021,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="jTextPane33">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
@@ -949,6 +1029,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="jTextPane77">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[24, 24]"/>
         </Property>
