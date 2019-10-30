@@ -30,8 +30,9 @@ public class SizeChoosement extends javax.swing.JPanel {
         ButtonSize4 = new javax.swing.JButton();
         ButtonSize8 = new javax.swing.JButton();
         ButtonSize16 = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
 
-        setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        setCursor(new java.awt.Cursor(java.awt.Cursor.WAIT_CURSOR));
         setFont(new java.awt.Font("Stencil", 0, 24)); // NOI18N
 
         ButtonSize4.setFont(new java.awt.Font("Stencil", 0, 24)); // NOI18N
@@ -42,6 +43,16 @@ public class SizeChoosement extends javax.swing.JPanel {
 
         ButtonSize16.setFont(new java.awt.Font("Stencil", 0, 24)); // NOI18N
         ButtonSize16.setText("16x16");
+
+        jButton1.setBackground(new java.awt.Color(240, 255, 0));
+        jButton1.setForeground(new java.awt.Color(255, 0, 0));
+        jButton1.setText("Tja Thaddeus");
+        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -55,11 +66,13 @@ public class SizeChoosement extends javax.swing.JPanel {
                 .addGap(25, 25, 25)
                 .addComponent(ButtonSize16, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(20, 20, 20))
+            .addComponent(jButton1, javax.swing.GroupLayout.Alignment.TRAILING)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(131, 131, 131)
+                .addComponent(jButton1)
+                .addGap(108, 108, 108)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(ButtonSize4, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(ButtonSize8, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -68,10 +81,15 @@ public class SizeChoosement extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton ButtonSize16;
     private javax.swing.JButton ButtonSize4;
     private javax.swing.JButton ButtonSize8;
+    private javax.swing.JButton jButton1;
     // End of variables declaration//GEN-END:variables
 }
