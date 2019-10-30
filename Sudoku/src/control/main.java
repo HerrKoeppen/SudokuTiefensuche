@@ -36,6 +36,42 @@ public class main {
             
     }
 
+        
+        public static void sudokuInitialisieren(short sze){
+            size = sze;
+            sdk = new short[sze][sze];
+        }
+        
+        public static void zelleVeraendern(short x, short y, short value){
+            if((x >= size) ||(y >= size)) return;
+            sdk[x][y] = value;
+        }
+        
+        public static void sudokuErstellen(){
+            sudoku = new model.Sudoku(sdk, size);
+        }
+        
+        public static void importieren(String file, short sze){
+            size = sze;
+            sdk = convert(file, sze);
+            sudoku = new model.Sudoku(sdk, sze);
+        }
+        
+        public static void sudokuLoesen(){
+            sudoku.sudokuLoesen();
+        }
+        
+        
+        
+        public static void setSdkVal(short x, short y, short val){
+            //  @Yannis das hier ist für dich ♥ (nohomo)
+        }
+        
+        
+        //-----------------------private functions------------------------------
+        
+        
+        
         private static short[][] convert(String file, short size) {
         String filePath = new File("").getAbsolutePath();
         filePath = filePath.concat("/src/control/" + file);
@@ -57,34 +93,4 @@ public class main {
 
 
 }
-        
-        
-        
-        public static void sudokuInitialisieren(short sze){
-            size = sze;
-            sdk = new short[sze][sze];
-        }
-        
-        public static void zelleVeraendern(short x, short y, short value){
-            if((x >= size) ||(y >= size)) return;
-            sdk[x][y] = value;
-        }
-        
-        public static void sudokuErstellen(){
-            sudoku = new model.Sudoku(sdk, size);
-        }
-        
-        
-        
-        public static void importieren(String file, short sze){
-            size = sze;
-            sdk = convert(file, sze);
-            sudoku = new model.Sudoku(sdk, sze);
-        }
-        
-        
-        
-        public static void sudokuLoesen(){
-            sudoku.sudokuLoesen();
-        }
 }

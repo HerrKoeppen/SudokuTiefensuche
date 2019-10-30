@@ -73,14 +73,18 @@ public class Sudoku {
                 
                 if(werteNetz[ix][iy].naechsteEinsetzen(ix, iy, size)) {
                     goNext = true;
-                    //ausgabe von ix iy
+                    
                 }       //Einsetzen der nächstgrößten, einsetzbaren Zahl
                 else {  //und setzen der Bewegrichtung
                     goNext = false;
                     //blaetter.add((ix * size) + iy +1);
                     anzBlaetter++;
-                    //augabe bei ix iy löschen
                 }
+                control.main.setSdkVal(ix, iy, werteNetz[ix][iy].getWert());
+                try{
+                    Thread.sleep(100);
+                }
+                catch(InterruptedException ex){}
                 anzKnoten++;
                 
                 if(size <= 9){
@@ -166,5 +170,33 @@ public class Sudoku {
     }
     public short getSize(){
         return size;
+    }
+
+    /**
+     * @return the anzBlaetter
+     */
+    public int getAnzBlaetter() {
+        return anzBlaetter;
+    }
+
+    /**
+     * @return the anzKnoten
+     */
+    public int getAnzKnoten() {
+        return anzKnoten;
+    }
+
+    /**
+     * @return the anzRekAuf
+     */
+    public int getAnzRekAuf() {
+        return anzRekAuf;
+    }
+
+    /**
+     * @return the graph
+     */
+    public String getGraph() {
+        return graph;
     }
 }
