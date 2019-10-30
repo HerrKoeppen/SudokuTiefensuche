@@ -7,12 +7,19 @@ package model;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import javax.swing.JDialog;
 
 /**
  *
  * @author Joshua, Lukas, Simon
  */
 public class Sudoku {
+    
+    private int anzBlaetter = 1;//statistische Variablen
+    private int anzKnoten = 0;
+    private int anzRekAuf = 0;
+    
+    private String graph = "";
     
     protected Zelle[][] werteNetz;
     protected boolean geloest, loesbar;
@@ -50,57 +57,42 @@ public class Sudoku {
         anzTests = 0;
     }
     
-    public void sudokuLoesen(boolean tracePath, boolean stats, boolean showGraph){
+    public void sudokuLoesen(){
         if(geloest||size < 1) return;//Abbruch bei nicht initialisiertem oder bereits gelöstem Sudoku
+        
+        graph+="| #";
+        for(int c = 0; c < size*size+size-2;c++) graph+= " ";
+        graph+="||\n";
+        
         short ix = 0, iy = 0; //index der momentanen Zelle
         boolean done = false;
         boolean goNext = true;//Bewegrichtung der Rekursionstiefe (in die nächste Ebene / in die vorherige raus)
                               //Benötigt, um vorgegebene Zellen überspringen zu können
-                              
-        int anzBlaetter = 1;//statistische Variablen
-        int anzKnoten = 0;
-        int anzInnKnoten = 0;
-        int anzRekAuf = 0;
-        ArrayList blaetter = new ArrayList<Integer>();
-        boolean isKnoten[][] = new boolean[size][size];
+        //ArrayList blaetter = new ArrayList<Integer>();
         
-        String graph = "";
-        if(showGraph&&size<10){
-            graph+=("| #");
-            for(int c = 0; c < size*size+size-2;c++) graph+=(" ");
-            graph+=("||\n");
-        }
-        else if(showGraph) graph = "\033[31m    //FEHLER: Rekursionsgraph kann nicht gezeichnet werden, da \033[34m[size]\033[31m > 10 ist.\033[0m\n";
                 
         while(!done){
             anzRekAuf++;
             if(!werteNetz[ix][iy].isStatisch()){ //überspringe vorgegebene Zellen
                 
                 if(werteNetz[ix][iy].naechsteEinsetzen(ix, iy, size)) {
-                    if(!goNext){
-                        goNext = true;
-                        if(!isKnoten[ix][iy]){
-                            isKnoten[ix][iy] = true;
-                            anzInnKnoten++;
-                        }
-                        isKnoten[ix][iy] = true;
-                    }
-                    if(tracePath&&stats) System.out.println("Betrete neue Rekursionsebene - (X:"+(iy+1)+" , Y:"+(ix+1)+")");
-                    if(tracePath) view.Ausgabe.sudokuAnzeigen(this,ix, iy);
+                    goNext = true;
+                    
                 }       //Einsetzen der nächstgrößten, einsetzbaren Zahl
                 else {  //und setzen der Bewegrichtung
-                    if(goNext){
-                        goNext = false;
-                        blaetter.add((ix * size) + iy +1);
-                        anzBlaetter++;
-                    }
-                    if(tracePath&&stats) System.out.println("Verlasse Rekursionsebene bei (X:"+(iy+1)+" , Y:"+(ix+1)+") - Tiefe: "+((ix * size) + iy +1));
-                    if(tracePath&&stats) view.Ausgabe.sudokuAnzeigen(this,ix, iy);
+                    goNext = false;
+                    //blaetter.add((ix * size) + iy +1);
+                    anzBlaetter++;
                 }
+                control.main.setSdkVal(ix, iy, werteNetz[ix][iy].getWert());
+                try{
+                    Thread.sleep(100);
+                }
+                catch(InterruptedException ex){}
                 anzKnoten++;
                 
-                if(showGraph&&size<10){
-                    graph+=("|");
+                if(size <= 9){
+                    graph += "|";
                     int cs = 0;
                     for(int c = 0;  c < ((ix * size) + iy +1);c++) {
                         int w = werteNetz[(int)Math.ceil(c/size)][c - size * (int)Math.ceil(c/size)].getWert();
@@ -110,10 +102,10 @@ public class Sudoku {
                         else graph += "\033[31m=";
                     };
                     graph += "#";
-                    for(int c = 0; c < (size*size)-((ix * size) + iy +2);c++) graph+=(" ");
+                    for(int c = 0; c < (size*size)-((ix * size) + iy +2);c++) graph += " ";
                     for(int c = 0; c < size - cs; c++) graph += " ";
-                    if((size*size) > ((ix * size) + iy +1)) graph+=("|");
-                    graph+="|\033[0m\n";
+                    if((size*size) > ((ix * size) + iy +1)) graph += "|";
+                    graph += "|\033[0m\n";
                 }
             }
             
@@ -125,7 +117,7 @@ public class Sudoku {
                     else { //sudoku wurde gelöst
                         done = true;
                         loesbar = true;
-                        blaetter.add(size*size);
+                        //blaetter.add(size*size);
                     }
                 }
             }
@@ -137,40 +129,26 @@ public class Sudoku {
                     else { //sudoku ist nicht lösbar
                         done = true;
                         loesbar = false;
+                        }
                     }
                 }
             }
-        }
-        geloest = true;
-        if(showGraph) System.out.println(graph);
-        if(stats){
-            
-            System.out.print("Lösungsalgorithmus - Ergebnis:");
-            if(loesbar) System.out.println(" Das Sudoku ist lösbar!\n");
-            else  System.out.println(" Das Sudoku ist nicht lösbar!\n");
-            
-            System.out.println("Gesammtzahl der Knoten: " + anzKnoten +"\n");
-            System.out.println(" -> Gesammtzahl der inneren Knoten/Teilbäume: " + anzInnKnoten);
-            System.out.println(" -> Gesammtzahl der Halbblätter: " + (anzKnoten - anzInnKnoten - anzBlaetter));
-            System.out.println(" -> Gesammtzahl der Blätter: " + anzBlaetter);
-            System.out.println("\nGesammtzahl überprüfter Zahlen: " + anzTests);
-            System.out.println("Gesammtzahl verglichener Zahlen: " + anzTests *(size-1)*3 + " (" + anzTests + " * " + (size-1)*3 + ")");
-            anzTests = 0;
-            System.out.println("\nGesammtzahl rekursiver Aufrufe: " + anzRekAuf);
-            System.out.println("Gesammtzahl übersprungener Felder: " + (anzRekAuf - anzKnoten));
-            blaetter.sort(Collections.reverseOrder());
-            String[] b = blaetter.toString().split(",");
-            String blaetter_ = "";
-            for(int i = 0;i< b.length;i++){
-                blaetter_ += b[i];
-                if(i+1 < b.length){
-                    blaetter_ += ",";
-                    if((i+1)%40 == 0) blaetter_ += "\n ";
-                }
+            geloest = true;
+            if(loesbar){
+                JDialog popup = new JDialog();
+                popup.setTitle("Erfolg!");
+                popup.setSize(440,250);
+                popup.add(new view.SudokuGeloest(popup));        
+                popup.setVisible(true);
             }
-            System.out.println("\nAbsteigend geordnete Liste der Tiefen aller Blätter:\n "+ blaetter_ +"\n\n");
+            else{
+                JDialog popup = new JDialog();
+                popup.setTitle("Erfolg!");
+                popup.setSize(440,250);
+                popup.add(new view.SudokuNichtGeloest(popup));        
+                popup.setVisible(true);
+            }
         }
-    }
     
     public boolean geloest(){
         return geloest;
@@ -210,5 +188,33 @@ public class Sudoku {
     }
     public short getSize(){
         return size;
+    }
+
+    /**
+     * @return the anzBlaetter
+     */
+    public int getAnzBlaetter() {
+        return anzBlaetter;
+    }
+
+    /**
+     * @return the anzKnoten
+     */
+    public int getAnzKnoten() {
+        return anzKnoten;
+    }
+
+    /**
+     * @return the anzRekAuf
+     */
+    public int getAnzRekAuf() {
+        return anzRekAuf;
+    }
+
+    /**
+     * @return the graph
+     */
+    public String getGraph() {
+        return graph;
     }
 }

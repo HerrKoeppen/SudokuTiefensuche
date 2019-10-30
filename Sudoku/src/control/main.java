@@ -5,45 +5,84 @@
  */
 package control;
 
-import java.io.IOException;
+import java.awt.Color;
 import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
-import java.util.Arrays;
 import java.util.Scanner;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import javax.swing.JDialog;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import view.*;
 /**
  *
  * @author yannis.hofmann , Joshua
  */
 public class main {
+        //GameState state = GameState.SIZEC;
+        static public short size = 1;
+        static private short[][] sdk = new short[1][1];
+        static private model.Sudoku sudoku = new model.Sudoku(sdk, (short)1);
     
+        static public JDialog window = new JDialog();
+        
+        static public SizeChoosement szeCh;
+        static public SudokuExportment sdkExp9;
+        static public SudokuExportment16x16 sdkExp16;
+        static public SudokuExportment4x4 sdkExp4;
+        static public SudokuImportment sdkImp;
+        static public SudokuImportment4x4 sdkImp4;
+        static public SudokuImportment16x16 sdkImp16;
+        
+        
         public static void main(String[] args) {
+            window.setTitle("Sudoku");
+            window.setSize(450,300);
+            szeCh = new view.SizeChoosement();
+            window.add(szeCh);
+            window.setVisible(true);
+        }
+        
             
-            //Beispiel Sudoku in "sample.txt"
-            short[][] sudokuleicht = new short[9][9];
-            sudokuleicht = convert("sample.txt",(short)9);
-            model.Sudoku sdk = new model.Sudoku(sudokuleicht,(short)9);
-            view.Ausgabe.sudokuAnzeigen(sdk);
-            sdk.sudokuLoesen(false, true, false);
-            view.Ausgabe.sudokuAusgeben(sdk);
-            
-            //leeres Sudoku
-            short size = 4; //Größe des Leeren Sudokus - Größe schneller leeren Sudokus: 1 , 2 , 4 , 9 , 16 , 64 , (256) -> Quadrate der 2er Potenzen (bis auf 9)
-            short[][] sdk2_ = new short[size][size]; //Notiz: Die Matrix muss (n^2) * (n^2) groß sein -> sqrt (size) = Natürliche Zahl
-            sdk2_[1][0] = 2;
-            sdk2_[0][1] = 1;
-            sdk2_[2][1] = 4;
-            sdk2_[3][2] = 4;
-            sdk2_[0][3] = 3;
-            model.Sudoku sdk2 = new model.Sudoku(sdk2_,(short)size);
-            sdk2.sudokuLoesen(false, true, false);//Stand d. Algorithmus  |  Statistiken für Nerds  |  Rekursionsraph
-            view.Ausgabe.sudokuAusgeben(sdk2);
-    }
+    
 
-        public static short[][] convert(String file, short size) {
+        
+        public static void sudokuInitialisieren(short sze){
+            size = sze;
+            sdk = new short[sze][sze];
+        }
+        
+        public static void zelleVeraendern(short x, short y, short value){
+            if((x >= size) ||(y >= size)) return;
+            sdk[x][y] = value;
+        }
+        
+        public static void sudokuErstellen(){
+            sudoku = new model.Sudoku(sdk, size);
+        }
+        
+        public static void importieren(String file, short sze){
+            size = sze;
+            sdk = convert(file, sze);
+            sudoku = new model.Sudoku(sdk, sze);
+        }
+        
+        public static void sudokuLoesen(){
+            sudoku.sudokuLoesen();
+        }
+        
+        
+        
+        public static void setSdkVal(short x, short y, short val){
+            //  @Yannis das hier ist für dich ♥ (nohomo)
+        }
+        
+        
+        //-----------------------private functions------------------------------
+        
+        
+        
+        private static short[][] convert(String file, short size) {
         String filePath = new File("").getAbsolutePath();
         filePath = filePath.concat("/src/control/" + file);
         Scanner sc = null;            
@@ -64,5 +103,7 @@ public class main {
 
 
 }
+        
+        
         
 }
