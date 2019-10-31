@@ -24,10 +24,10 @@ public class main {
     
         static public JDialog window = new JDialog();
         static public SizeChoosement szeCh;
-        static public SudokuExportment sdkExp;
+        static public SudokuExportment sdkExp9;
         static public SudokuExportment16x16 sdkExp16;
         static public SudokuExportment4x4 sdkExp4;
-        static public SudokuImportment sdkImp;
+        static public SudokuImportment sdkImp9;
         static public SudokuImportment4x4 sdkImp4;
         static public SudokuImportment16x16 sdkImp16;
         
@@ -128,7 +128,7 @@ public class main {
                     }
                 }
             }
-            /*
+            
             else if(size == 9){
                 switch (x) {
                     case 0:
@@ -267,7 +267,7 @@ public class main {
                         break;
                     }
                 }
-            }
+            }/*
             else if(size == 16){
                 switch (x) {
                     case 0:

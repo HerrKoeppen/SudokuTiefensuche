@@ -88,8 +88,8 @@ public class SizeChoosement extends javax.swing.JPanel {
     private void ButtonSize8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonSize8ActionPerformed
         control.main.window.remove(this);
         control.main.window.setSize(410,460);
-        control.main.sdkImp = new view.SudokuImportment();
-        control.main.window.add(control.main.sdkImp);
+        control.main.sdkImp9 = new view.SudokuImportment();
+        control.main.window.add(control.main.sdkImp9);
         control.main.size = 9;
     }//GEN-LAST:event_ButtonSize8ActionPerformed
 

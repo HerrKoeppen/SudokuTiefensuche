@@ -612,8 +612,8 @@ public class SudokuImportment extends javax.swing.JPanel {
 
     private void LösenImpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LösenImpActionPerformed
         control.main.window.remove(this);
-        control.main.sdkExp = new view.SudokuExportment();
-        control.main.window.add(control.main.sdkExp);
+        control.main.sdkExp9 = new view.SudokuExportment();
+        control.main.window.add(control.main.sdkExp9);
 
         control.main.sudokuInitialisieren((short)9);
         /*
