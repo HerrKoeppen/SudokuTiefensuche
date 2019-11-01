@@ -616,7 +616,7 @@ public class SudokuImportment extends javax.swing.JPanel {
         control.main.window.add(control.main.sdkExp9);
 
         control.main.sudokuInitialisieren((short)9);
-        /*
+        
         control.main.zelleVeraendern((short)0, (short)0, L1x1.getText());
         control.main.zelleVeraendern((short)0, (short)1, L1x2.getText());
         control.main.zelleVeraendern((short)0, (short)2, L1x3.getText());
@@ -706,7 +706,7 @@ public class SudokuImportment extends javax.swing.JPanel {
         control.main.zelleVeraendern((short)8, (short)6, L9x7.getText());
         control.main.zelleVeraendern((short)8, (short)7, L9x8.getText());
         control.main.zelleVeraendern((short)8, (short)8, L9x9.getText());
-        */
+        
         control.main.sudokuErstellen();
         control.main.sudokuLoesen();
     }//GEN-LAST:event_LösenImpActionPerformed

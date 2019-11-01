@@ -135,166 +135,247 @@ public class SudokuExportment extends javax.swing.JPanel {
 
         ImportImp.setText("Export");
 
+        L1x1.setEditable(false);
         L1x1.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L1x2.setEditable(false);
         L1x2.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L1x3.setEditable(false);
         L1x3.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L1x4.setEditable(false);
         L1x4.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L1x5.setEditable(false);
         L1x5.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L1x6.setEditable(false);
         L1x6.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L1x7.setEditable(false);
         L1x7.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L1x8.setEditable(false);
         L1x8.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L1x9.setEditable(false);
         L1x9.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L2x1.setEditable(false);
         L2x1.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L2x2.setEditable(false);
         L2x2.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L2x3.setEditable(false);
         L2x3.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L2x4.setEditable(false);
         L2x4.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L2x5.setEditable(false);
         L2x5.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L2x6.setEditable(false);
         L2x6.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L2x7.setEditable(false);
         L2x7.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L2x8.setEditable(false);
         L2x8.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L2x9.setEditable(false);
         L2x9.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L3x1.setEditable(false);
         L3x1.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L3x2.setEditable(false);
         L3x2.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L3x3.setEditable(false);
         L3x3.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L3x4.setEditable(false);
         L3x4.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L3x5.setEditable(false);
         L3x5.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L3x6.setEditable(false);
         L3x6.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L3x7.setEditable(false);
         L3x7.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L3x8.setEditable(false);
         L3x8.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L3x9.setEditable(false);
         L3x9.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L4x1.setEditable(false);
         L4x1.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L4x2.setEditable(false);
         L4x2.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L4x3.setEditable(false);
         L4x3.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L4x4.setEditable(false);
         L4x4.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L4x5.setEditable(false);
         L4x5.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L4x6.setEditable(false);
         L4x6.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L4x7.setEditable(false);
         L4x7.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L4x8.setEditable(false);
         L4x8.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L4x9.setEditable(false);
         L4x9.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L5x1.setEditable(false);
         L5x1.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L5x2.setEditable(false);
         L5x2.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L5x3.setEditable(false);
         L5x3.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L5x4.setEditable(false);
         L5x4.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L5x5.setEditable(false);
         L5x5.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L5x6.setEditable(false);
         L5x6.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L5x7.setEditable(false);
         L5x7.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L5x8.setEditable(false);
         L5x8.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L5x9.setEditable(false);
         L5x9.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L6x1.setEditable(false);
         L6x1.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L6x2.setEditable(false);
         L6x2.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L6x3.setEditable(false);
         L6x3.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L6x4.setEditable(false);
         L6x4.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L6x5.setEditable(false);
         L6x5.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L6x6.setEditable(false);
         L6x6.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L6x7.setEditable(false);
         L6x7.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L6x8.setEditable(false);
         L6x8.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L6x9.setEditable(false);
         L6x9.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L7x1.setEditable(false);
         L7x1.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L7x2.setEditable(false);
         L7x2.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L7x3.setEditable(false);
         L7x3.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L7x4.setEditable(false);
         L7x4.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L7x5.setEditable(false);
         L7x5.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L7x6.setEditable(false);
         L7x6.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L7x7.setEditable(false);
         L7x7.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L7x8.setEditable(false);
         L7x8.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L7x9.setEditable(false);
         L7x9.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L8x1.setEditable(false);
         L8x1.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L8x2.setEditable(false);
         L8x2.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L8x3.setEditable(false);
         L8x3.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L8x4.setEditable(false);
         L8x4.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L8x5.setEditable(false);
         L8x5.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L8x6.setEditable(false);
         L8x6.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L8x7.setEditable(false);
         L8x7.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L8x8.setEditable(false);
         L8x8.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L8x9.setEditable(false);
         L8x9.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L9x1.setEditable(false);
         L9x1.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L9x2.setEditable(false);
         L9x2.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L9x3.setEditable(false);
         L9x3.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L9x4.setEditable(false);
         L9x4.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L9x5.setEditable(false);
         L9x5.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L9x6.setEditable(false);
         L9x6.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L9x7.setEditable(false);
         L9x7.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L9x8.setEditable(false);
         L9x8.setMinimumSize(new java.awt.Dimension(24, 24));
 
+        L9x9.setEditable(false);
         L9x9.setMinimumSize(new java.awt.Dimension(24, 24));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
